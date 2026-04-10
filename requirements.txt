@@ -1,0 +1,43 @@
+# Core Python Utilities
+requests==2.32.3
+python-dotenv==1.0.1
+pydantic==2.10.6
+pydantic-settings==2.7.1
+
+# Logging
+loguru==0.7.3
+
+# Google Gemini API
+google-generativeai==0.8.3
+
+# LangChain Core (install in this order to avoid conflicts)
+langchain-core==0.3.32
+langchain==0.3.16
+langchain-community==0.3.16
+langchain-text-splitters==0.3.5
+langchain-google-genai==2.0.5
+
+# LangGraph for Multi-Agent Workflow
+langgraph==0.2.68
+langgraph-checkpoint==2.0.10
+
+# Gradio Web Interface
+gradio==5.9.1
+
+# Vector Database
+chromadb==0.6.3
+
+# BM25 Retrieval
+rank-bm25==0.2.2
+
+# Document Processing
+pypdf==5.2.0
+python-docx==1.1.2
+
+# Optional: Docling for Advanced Document Parsing
+# Uncomment the lines below if you want to use Docling
+# Note: Docling requires PyTorch. Install PyTorch CPU version separately first:
+# pip install torch --index-url https://download.pytorch.org/whl/cpu
+# Then uncomment these lines:
+docling==2.15.0
+docling-core==2.16.0
