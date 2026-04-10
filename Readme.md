@@ -57,7 +57,7 @@ Traditional LLMs struggle with large, complex documents that include tables, ima
 ### Setup
 
 ```bash
-git clone https://github.com/your-username/RagnrAI.git
+git clone https://github.com/mtoqeerzafar/RagnrAI.git
 cd RagnrAI
 
 python -m venv venv
