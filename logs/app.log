@@ -1,0 +1,35 @@
+2026-07-13 13:21:50 | INFO | db.qdrant_client:load_models:22 - Loading FastEmbed models into System RAM...
+2026-07-13 13:21:54 | INFO | db.qdrant_client:load_models:29 - Models loaded successfully.
+2026-07-13 13:23:19 | INFO | db.qdrant_client:load_models:22 - Loading FastEmbed models into System RAM...
+2026-07-13 13:23:26 | INFO | db.qdrant_client:load_models:29 - Models loaded successfully.
+2026-07-13 13:29:25 | INFO | db.qdrant_client:load_models:22 - Loading FastEmbed models into System RAM...
+2026-07-13 13:29:28 | INFO | db.qdrant_client:load_models:29 - Models loaded successfully.
+2026-07-13 13:30:08 | INFO | cache.exact_cache:set_cache:43 - Saved verified answer to Exact Cache.
+2026-07-13 13:30:09 | INFO | cache.semantic_cache:set_cache:86 - Saved verified answer to Semantic Cache.
+2026-07-13 13:33:27 | INFO | cache.exact_cache:set_cache:43 - Saved verified answer to Exact Cache.
+2026-07-13 13:33:28 | INFO | cache.semantic_cache:set_cache:86 - Saved verified answer to Semantic Cache.
+2026-07-13 13:54:52 | INFO | db.qdrant_client:load_models:22 - Loading FastEmbed models into System RAM...
+2026-07-13 13:54:55 | INFO | db.qdrant_client:load_models:29 - Models loaded successfully.
+2026-07-13 13:56:02 | INFO | cache.exact_cache:set_cache:43 - Saved verified answer to Exact Cache.
+2026-07-13 13:56:03 | INFO | cache.semantic_cache:set_cache:86 - Saved verified answer to Semantic Cache.
+2026-07-13 14:46:13 | INFO | db.qdrant_client:load_models:22 - Loading FastEmbed models into System RAM...
+2026-07-13 14:46:16 | INFO | db.qdrant_client:load_models:29 - Models loaded successfully.
+2026-07-13 14:47:07 | INFO | cache.exact_cache:set_cache:43 - Saved verified answer to Exact Cache.
+2026-07-13 14:47:08 | INFO | cache.semantic_cache:set_cache:86 - Saved verified answer to Semantic Cache.
+2026-07-13 14:48:27 | INFO | cache.exact_cache:set_cache:43 - Saved verified answer to Exact Cache.
+2026-07-13 14:48:28 | INFO | cache.semantic_cache:set_cache:86 - Saved verified answer to Semantic Cache.
+2026-07-13 14:55:55 | INFO | cache.exact_cache:set_cache:43 - Saved verified answer to Exact Cache.
+2026-07-13 14:55:56 | INFO | cache.semantic_cache:set_cache:86 - Saved verified answer to Semantic Cache.
+2026-07-13 14:57:32 | INFO | cache.exact_cache:set_cache:43 - Saved verified answer to Exact Cache.
+2026-07-13 14:57:33 | INFO | cache.semantic_cache:set_cache:86 - Saved verified answer to Semantic Cache.
+2026-07-13 14:58:09 | INFO | cache.exact_cache:check_cache:31 - Exact Cache HIT!
+2026-07-13 14:58:09 | INFO | cache.exact_cache:set_cache:43 - Saved verified answer to Exact Cache.
+2026-07-13 14:58:09 | INFO | cache.semantic_cache:set_cache:86 - Saved verified answer to Semantic Cache.
+2026-07-13 14:58:52 | INFO | cache.exact_cache:set_cache:43 - Saved verified answer to Exact Cache.
+2026-07-13 14:58:52 | INFO | cache.semantic_cache:set_cache:86 - Saved verified answer to Semantic Cache.
+2026-07-13 18:12:17 | INFO | db.qdrant_client:load_models:22 - Loading FastEmbed models into System RAM...
+2026-07-13 18:12:26 | INFO | db.qdrant_client:load_models:29 - Models loaded successfully.
+2026-07-13 18:59:52 | INFO | db.qdrant_client:load_models:22 - Loading FastEmbed models into System RAM...
+2026-07-13 18:59:58 | INFO | db.qdrant_client:load_models:29 - Models loaded successfully.
+2026-07-14 14:59:50 | INFO | db.qdrant_client:load_models:22 - Loading FastEmbed models into System RAM...
+2026-07-14 14:59:54 | INFO | db.qdrant_client:load_models:29 - Models loaded successfully.

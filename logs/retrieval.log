@@ -1,0 +1,15 @@
+2026-07-13 18:10:47 | INFO | Qdrant Retriever Builder initialized.
+2026-07-13 18:12:34 | INFO | Retrieved 30 documents from Qdrant.
+2026-07-13 18:12:35 | INFO | --- RERANKING RESULTS for query 'what is RAG-Aware LLM Finetuning?' ---
+2026-07-13 18:12:35 | INFO | --- Returning 6 final grouped chunks ---
+2026-07-13 18:49:11 | INFO | Qdrant Retriever Builder initialized.
+2026-07-13 18:50:37 | INFO | Qdrant Retriever Builder initialized.
+2026-07-13 18:52:35 | INFO | Qdrant Retriever Builder initialized.
+2026-07-13 18:56:56 | INFO | Qdrant Retriever Builder initialized.
+2026-07-13 19:00:05 | INFO | Retrieved 30 documents from Qdrant.
+2026-07-13 19:00:05 | INFO | --- RERANKING RESULTS for query 'Query Processing and Retrieval' ---
+2026-07-13 19:00:05 | INFO | --- Returning 6 final grouped chunks ---
+2026-07-13 20:15:50 | INFO | Qdrant Retriever Builder initialized.
+2026-07-13 20:19:39 | INFO | Qdrant Retriever Builder initialized.
+2026-07-14 14:52:09 | INFO | Qdrant Retriever Builder initialized.
+2026-07-14 14:52:42 | INFO | Qdrant Retriever Builder initialized.

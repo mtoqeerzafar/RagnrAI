@@ -1,0 +1,1331 @@
+2026-06-25 16:46:47 | WARNING | File not found: examples/google-2024-environmental-report.pdf
+2026-06-25 16:51:17 | INFO | Processing new/changed documents...
+2026-06-25 16:51:17 | INFO | Processing and caching: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\be1d34f3f7114a50cefe00257c24027f68a04176fe239a8debdbb0b296f27c88\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-25 16:59:53 | INFO | Processing new/changed documents...
+2026-06-25 16:59:53 | INFO | Processing and caching: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-25 17:01:14 | INFO | Total unique chunks: 8
+2026-06-25 17:01:18 | ERROR | Processing error: Error embedding content: 404 models/embedding-001 is not found for API version v1beta, or is not supported for embedContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+2026-06-25 17:20:41 | INFO | Processing new/changed documents...
+2026-06-25 17:20:41 | INFO | Loading from cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-25 17:20:41 | INFO | Total unique chunks: 8
+2026-06-25 17:20:43 | ERROR | Processing error: Error embedding content: 404 models/text-embedding-004 is not found for API version v1beta, or is not supported for embedContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+2026-06-25 17:28:39 | INFO | Processing new/changed documents...
+2026-06-25 17:28:39 | INFO | Loading from cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-25 17:28:39 | INFO | Total unique chunks: 8
+2026-06-25 18:14:52 | INFO | Processing new/changed documents...
+2026-06-25 18:14:52 | INFO | Loading from cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-25 18:14:52 | INFO | Total unique chunks: 8
+2026-06-25 20:09:34 | INFO | Processing new/changed documents...
+2026-06-25 20:09:34 | INFO | Loading from cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-25 20:09:34 | INFO | Total unique chunks: 8
+2026-06-25 20:22:23 | INFO | Processing new/changed documents...
+2026-06-25 20:22:23 | INFO | Loading from cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-25 20:22:23 | INFO | Total unique chunks: 8
+2026-06-25 20:36:20 | INFO | Loading from cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-25 20:36:20 | INFO | Total unique chunks: 8
+2026-06-25 20:38:52 | INFO | Loading from cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-25 20:38:52 | INFO | Total unique chunks: 8
+2026-06-25 20:42:51 | INFO | Loading from cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-25 20:42:51 | INFO | Total unique chunks: 8
+2026-06-25 20:44:29 | INFO | Loading from cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-25 20:44:29 | INFO | Total unique chunks: 8
+2026-06-25 20:46:38 | INFO | Loading from cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-25 20:46:38 | INFO | Total unique chunks: 8
+2026-06-25 20:50:51 | INFO | Loading from cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-25 20:50:51 | INFO | Total unique chunks: 8
+2026-06-25 21:12:31 | INFO | Processing new/changed documents...
+2026-06-25 21:12:31 | INFO | Loading from cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-25 21:12:31 | INFO | Total unique chunks: 8
+2026-06-25 21:12:44 | ERROR | Processing error: Relevance checker model inference failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite
+Please retry in 19.126804319s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash-lite"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 19
+}
+]
+2026-06-25 21:17:16 | ERROR | Processing error: Relevance checker model inference failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite
+Please retry in 46.822930398s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash-lite"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 46
+}
+]
+2026-06-25 21:17:39 | ERROR | Processing error: Relevance checker model inference failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite
+Please retry in 23.155175772s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash-lite"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 23
+}
+]
+2026-06-25 21:18:37 | ERROR | Processing error: Relevance checker model inference failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite
+Please retry in 25.392019449s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash-lite"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 25
+}
+]
+2026-06-25 21:18:50 | ERROR | Processing error: Relevance checker model inference failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite
+Please retry in 12.157392582s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash-lite"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 12
+}
+]
+2026-06-25 21:23:15 | INFO | Loading from cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-25 21:23:15 | INFO | Total unique chunks: 8
+2026-06-25 21:26:20 | INFO | Processing new/changed documents...
+2026-06-25 21:26:20 | INFO | Loading from cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-25 21:26:20 | INFO | Total unique chunks: 8
+2026-06-26 16:13:36 | INFO | Processing new/changed documents...
+2026-06-26 16:13:36 | INFO | Loading from cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf
+2026-06-26 16:13:36 | INFO | Total unique chunks: 8
+2026-06-26 19:43:23 | INFO | Bucket ragnr-documents not found. Creating it.
+2026-06-26 19:55:02 | INFO | Processing new/changed documents via API...
+2026-06-26 19:55:02 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\c6b6904c8f929a36036c4496d6ba9f5e14f649c4e3a2a5a9e6a4fdd7658c1c74\resume.pdf to async API for processing...
+2026-06-26 19:55:15 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-26 19:55:15 | INFO | Processing and caching: resume.pdf
+2026-06-26 19:55:46 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\85292ea96158a3e80861fc18241d9ab363645b51797fff09d4718c4c350abe3d\transcript.pdf to async API for processing...
+2026-06-26 19:55:47 | INFO | Successfully downloaded transcript.pdf to C:\tmp\ragnr\transcript.pdf
+2026-06-26 19:55:47 | INFO | Processing and caching: transcript.pdf
+2026-06-26 19:55:49 | ERROR | Failed to process C:\tmp\ragnr\transcript.pdf: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1159725056 bytes.
+2026-06-26 19:55:49 | ERROR | Task failed for job 3ec08dcc-15a4-4363-a3e5-35959c437c19: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1159725056 bytes.
+2026-06-26 19:55:50 | INFO | Successfully downloaded transcript.pdf to C:\tmp\ragnr\transcript.pdf
+2026-06-26 19:55:50 | INFO | Processing and caching: transcript.pdf
+2026-06-26 19:55:52 | ERROR | Failed to process C:\tmp\ragnr\transcript.pdf: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1159725056 bytes.
+2026-06-26 19:55:52 | ERROR | Task failed for job 3ec08dcc-15a4-4363-a3e5-35959c437c19: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1159725056 bytes.
+2026-06-26 19:55:52 | ERROR | Processing error: Processing failed: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1159725056 bytes.
+2026-06-26 19:55:54 | INFO | Successfully downloaded transcript.pdf to C:\tmp\ragnr\transcript.pdf
+2026-06-26 19:55:54 | INFO | Processing and caching: transcript.pdf
+2026-06-26 19:55:56 | ERROR | Failed to process C:\tmp\ragnr\transcript.pdf: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1159725056 bytes.
+2026-06-26 19:55:56 | ERROR | Task failed for job 3ec08dcc-15a4-4363-a3e5-35959c437c19: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1159725056 bytes.
+2026-06-26 19:56:00 | INFO | Successfully downloaded transcript.pdf to C:\tmp\ragnr\transcript.pdf
+2026-06-26 19:56:00 | INFO | Processing and caching: transcript.pdf
+2026-06-26 19:56:01 | ERROR | Failed to process C:\tmp\ragnr\transcript.pdf: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1159725056 bytes.
+2026-06-26 19:56:01 | ERROR | Task failed for job 3ec08dcc-15a4-4363-a3e5-35959c437c19: [enforce fail at alloc_cpu.cpp:117] data. DefaultCPUAllocator: not enough memory: you tried to allocate 1159725056 bytes.
+2026-06-26 19:58:58 | INFO | Processing new/changed documents via API...
+2026-06-26 19:58:58 | INFO | Loading from local cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\c6b6904c8f929a36036c4496d6ba9f5e14f649c4e3a2a5a9e6a4fdd7658c1c74\resume.pdf
+2026-06-26 19:58:58 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\85292ea96158a3e80861fc18241d9ab363645b51797fff09d4718c4c350abe3d\transcript.pdf to async API for processing...
+2026-06-26 19:59:45 | ERROR | Processing error: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-06-26 20:04:03 | INFO | Processing new/changed documents via API...
+2026-06-26 20:04:03 | INFO | Loading from local cache: C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\c6b6904c8f929a36036c4496d6ba9f5e14f649c4e3a2a5a9e6a4fdd7658c1c74\resume.pdf
+2026-06-26 20:04:03 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\85292ea96158a3e80861fc18241d9ab363645b51797fff09d4718c4c350abe3d\transcript.pdf to async API for processing...
+2026-06-26 20:04:06 | INFO | Successfully downloaded transcript.pdf to C:\tmp\ragnr\transcript.pdf
+2026-06-26 20:04:06 | INFO | Processing and caching: transcript.pdf
+2026-06-27 14:53:00 | INFO | Creating Qdrant collection: ragnr_documents
+2026-06-27 14:53:01 | INFO | Hybrid collection created successfully.
+2026-06-27 16:07:05 | INFO | Processing new documents via API...
+2026-06-27 16:07:05 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\c6b6904c8f929a36036c4496d6ba9f5e14f649c4e3a2a5a9e6a4fdd7658c1c74\resume.pdf to async API for Qdrant indexing...
+2026-06-27 16:07:13 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-27 16:07:13 | INFO | Loading from cache: resume.pdf
+2026-06-27 16:07:27 | INFO | Indexing 8 chunks to Qdrant...
+2026-06-27 16:07:32 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\a61049836f3340893bc10c2d4b44cc3a4defe39cfbe96f939f0db4d84c926c43\sentricare_pdf.pdf to async API for Qdrant indexing...
+2026-06-27 16:07:33 | INFO | Successfully downloaded sentricare_pdf.pdf to C:\tmp\ragnr\sentricare_pdf.pdf
+2026-06-27 16:07:33 | INFO | Processing and caching: sentricare_pdf.pdf
+2026-06-27 16:07:55 | INFO | Indexing 16 chunks to Qdrant...
+2026-06-27 17:26:45 | INFO | Processing new documents via API...
+2026-06-27 17:26:45 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf to async API for Qdrant indexing...
+2026-06-27 17:26:48 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-27 17:26:49 | INFO | Processing and caching: resume.pdf
+2026-06-27 17:26:58 | INFO | Indexing 8 chunks to Qdrant...
+2026-06-28 12:33:36 | INFO | Processing new documents via API...
+2026-06-28 12:33:36 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf to async API for Qdrant indexing...
+2026-06-28 12:33:43 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-28 12:33:43 | INFO | Processing and caching: resume.pdf
+2026-06-28 12:34:19 | INFO | Indexing 8 chunks to Qdrant...
+2026-06-28 13:19:25 | INFO | Processing new documents via API...
+2026-06-28 13:19:25 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf to async API for Qdrant indexing...
+2026-06-28 13:19:28 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-28 13:19:28 | INFO | Processing and caching: resume.pdf
+2026-06-28 13:19:59 | INFO | Indexing 8 chunks to Qdrant...
+2026-06-28 15:01:43 | INFO | Processing new documents via API...
+2026-06-28 15:01:43 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf to async API for Qdrant indexing...
+2026-06-28 15:01:46 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-28 15:01:46 | INFO | Loading from cache: resume.pdf
+2026-06-28 15:01:46 | INFO | Indexing 8 chunks to Qdrant...
+2026-06-28 15:25:19 | INFO | Processing new documents via API...
+2026-06-28 15:25:19 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf to async API for Qdrant indexing...
+2026-06-28 15:25:22 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-28 15:25:23 | INFO | Loading from cache: resume.pdf
+2026-06-28 15:25:23 | INFO | Indexing 8 chunks to Qdrant...
+2026-06-28 15:39:01 | INFO | Processing new documents via API...
+2026-06-28 15:39:01 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf to async API for Qdrant indexing...
+2026-06-28 15:39:09 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-28 15:39:10 | INFO | Loading from cache: resume.pdf
+2026-06-28 15:39:10 | INFO | Indexing 8 chunks to Qdrant...
+2026-06-28 21:53:52 | ERROR | Error checking bucket ragnr-documents: An error occurred (403) when calling the HeadBucket operation: Forbidden
+2026-06-29 02:58:51 | INFO | Processing new documents via API...
+2026-06-29 02:58:51 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf to async API for Qdrant indexing...
+2026-06-29 02:58:57 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-29 02:58:57 | INFO | Loading from cache: resume.pdf
+2026-06-29 02:59:12 | INFO | Indexing 8 chunks to Qdrant...
+2026-06-29 02:59:27 | ERROR | Processing error: Relevance checker model inference failed: 401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]
+2026-06-29 03:05:27 | INFO | Processing new documents via API...
+2026-06-29 03:05:27 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf to async API for Qdrant indexing...
+2026-06-29 03:05:30 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-29 03:05:30 | INFO | Loading from cache: resume.pdf
+2026-06-29 03:05:30 | INFO | Indexing 8 chunks to Qdrant...
+2026-06-29 03:45:04 | INFO | Processing new documents via API...
+2026-06-29 03:45:04 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf to async API for Qdrant indexing...
+2026-06-29 03:45:06 | ERROR | Processing error: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/upload-url?filename=resume.pdf (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-06-29 03:45:10 | INFO | Processing new documents via API...
+2026-06-29 03:45:10 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf to async API for Qdrant indexing...
+2026-06-29 03:45:12 | ERROR | Processing error: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/upload-url?filename=resume.pdf (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-06-29 12:38:25 | ERROR | Processing error: Relevance checker model inference failed: 401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]
+2026-06-29 16:01:42 | INFO | Creating Qdrant collection: semantic_cache
+2026-06-29 16:01:42 | INFO | Semantic Cache collection created successfully.
+2026-06-29 16:05:04 | WARNING | Semantic cache search failed: Unexpected Response: 400 (Bad Request)
+Raw response content:
+b'{"status":{"error":"Wrong input: Not existing vector name error: fast-sparse-splade_pp_en_v1"},"time":1.182686326}'
+2026-06-29 16:05:40 | WARNING | Failed to set semantic cache: argument of type 'NoneType' is not iterable
+2026-06-29 16:17:51 | INFO | Creating Qdrant collection: ragnr_documents
+2026-06-29 16:17:52 | INFO | Hybrid collection created successfully.
+2026-06-29 16:17:52 | INFO | Creating Qdrant collection: semantic_cache
+2026-06-29 16:17:53 | INFO | Semantic Cache collection created successfully.
+2026-06-29 16:23:39 | INFO | Creating Qdrant collection: ragnr_documents
+2026-06-29 16:23:40 | INFO | Hybrid collection created successfully.
+2026-06-29 16:23:40 | INFO | Creating Qdrant collection: semantic_cache
+2026-06-29 16:23:41 | INFO | Semantic Cache collection created successfully.
+2026-06-29 16:27:22 | INFO | Processing new documents via API...
+2026-06-29 16:27:22 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\be1d34f3f7114a50cefe00257c24027f68a04176fe239a8debdbb0b296f27c88\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to async API for Qdrant indexing...
+2026-06-29 16:27:31 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-29 16:27:31 | INFO | Processing and caching: The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-29 16:43:27 | ERROR | Task failed for job a826b126-75a6-4817-a8b3-a3459a1cb114: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\Users\TOQEE_~1\AppData\Local\Temp\fastembed_cache\models--Qdrant--Splade_PP_en_v1\snapshots\efcd182bc7eb351e81a9445752d4388c2bab500b\model.onnx failed:bad allocation
+2026-06-29 16:43:28 | ERROR | Processing error: Processing failed: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\Users\TOQEE_~1\AppData\Local\Temp\fastembed_cache\models--Qdrant--Splade_PP_en_v1\snapshots\efcd182bc7eb351e81a9445752d4388c2bab500b\model.onnx failed:bad allocation
+2026-06-29 16:43:28 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-29 16:43:29 | INFO | Loading from cache: The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-29 16:43:30 | ERROR | Task failed for job a826b126-75a6-4817-a8b3-a3459a1cb114: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\Users\TOQEE_~1\AppData\Local\Temp\fastembed_cache\models--Qdrant--Splade_PP_en_v1\snapshots\efcd182bc7eb351e81a9445752d4388c2bab500b\model.onnx failed:bad allocation
+2026-06-29 16:43:32 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-29 16:43:32 | INFO | Loading from cache: The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-29 16:43:33 | ERROR | Task failed for job a826b126-75a6-4817-a8b3-a3459a1cb114: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\Users\TOQEE_~1\AppData\Local\Temp\fastembed_cache\models--Qdrant--Splade_PP_en_v1\snapshots\efcd182bc7eb351e81a9445752d4388c2bab500b\model.onnx failed:bad allocation
+2026-06-29 16:43:37 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-29 16:43:37 | INFO | Loading from cache: The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-29 16:43:38 | ERROR | Task failed for job a826b126-75a6-4817-a8b3-a3459a1cb114: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\Users\TOQEE_~1\AppData\Local\Temp\fastembed_cache\models--Qdrant--Splade_PP_en_v1\snapshots\efcd182bc7eb351e81a9445752d4388c2bab500b\model.onnx failed:bad allocation
+2026-06-30 13:41:08 | INFO | Processing new documents via API...
+2026-06-30 13:41:08 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\be1d34f3f7114a50cefe00257c24027f68a04176fe239a8debdbb0b296f27c88\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to async API for Qdrant indexing...
+2026-06-30 13:41:12 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 13:41:12 | INFO | Processing and caching: The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 13:48:19 | INFO | Indexing 841 chunks to Qdrant...
+2026-06-30 13:48:19 | INFO | Loading FastEmbed models into VRAM using CUDAExecutionProvider...
+2026-06-30 13:48:32 | ERROR | Task failed for job 589eacf9-f535-4c7e-b9f8-db261be9cfe4: Unable to allocate 477. MiB for an array with shape (32, 128, 30522) and data type float32
+2026-06-30 13:48:33 | ERROR | Processing error: Processing failed: Unable to allocate 477. MiB for an array with shape (32, 128, 30522) and data type float32
+2026-06-30 13:48:48 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 13:48:49 | INFO | Loading from cache: The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 13:48:50 | INFO | Indexing 841 chunks to Qdrant...
+2026-06-30 13:49:13 | ERROR | Task failed for job 589eacf9-f535-4c7e-b9f8-db261be9cfe4: Unable to allocate 477. MiB for an array with shape (32, 128, 30522) and data type float32
+2026-06-30 13:49:15 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 13:49:16 | INFO | Loading from cache: The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 13:49:17 | ERROR | Failed to process C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf: 
+2026-06-30 13:49:17 | ERROR | Task failed for job 589eacf9-f535-4c7e-b9f8-db261be9cfe4: 
+2026-06-30 13:49:21 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 13:49:26 | ERROR | Failed to process C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf: 
+2026-06-30 13:49:26 | ERROR | Task failed for job 589eacf9-f535-4c7e-b9f8-db261be9cfe4: 
+2026-06-30 14:04:51 | INFO | Processing new documents via API...
+2026-06-30 14:04:51 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\be1d34f3f7114a50cefe00257c24027f68a04176fe239a8debdbb0b296f27c88\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to async API for Qdrant indexing...
+2026-06-30 14:04:54 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 14:04:54 | INFO | Processing and caching: The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 14:10:14 | INFO | Indexing 841 chunks to Qdrant...
+2026-06-30 14:10:14 | INFO | Loading FastEmbed models into VRAM using CUDAExecutionProvider...
+2026-06-30 14:11:02 | ERROR | Task failed for job 0d5c606b-551f-4c30-b33a-fd88033ff545: [ONNXRuntimeError] : 6 : RUNTIME_EXCEPTION : Non-zero status code returned while running MatMul node. Name:'/cls/predictions/decoder/MatMul' Status Message: bad allocation
+2026-06-30 14:11:02 | ERROR | Processing error: Processing failed: [ONNXRuntimeError] : 6 : RUNTIME_EXCEPTION : Non-zero status code returned while running MatMul node. Name:'/cls/predictions/decoder/MatMul' Status Message: bad allocation
+2026-06-30 14:11:03 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 14:11:06 | ERROR | Failed to process C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf: 
+2026-06-30 14:11:06 | ERROR | Task failed for job 0d5c606b-551f-4c30-b33a-fd88033ff545: 
+2026-06-30 14:11:08 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 14:11:09 | ERROR | Failed to process C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf: 
+2026-06-30 14:11:09 | ERROR | Task failed for job 0d5c606b-551f-4c30-b33a-fd88033ff545: 
+2026-06-30 14:11:15 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 14:11:23 | ERROR | Failed to process C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf: 
+2026-06-30 14:11:23 | ERROR | Task failed for job 0d5c606b-551f-4c30-b33a-fd88033ff545: 
+2026-06-30 14:19:25 | INFO | Processing new documents via API...
+2026-06-30 14:19:25 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf to async API for Qdrant indexing...
+2026-06-30 14:19:27 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-30 14:19:27 | INFO | Processing and caching: resume.pdf
+2026-06-30 14:19:51 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-06-30 14:19:51 | INFO | Loading FastEmbed models into VRAM using CUDAExecutionProvider...
+2026-06-30 14:19:57 | INFO | Loading FastEmbed models into VRAM using CUDAExecutionProvider...
+2026-06-30 14:20:26 | INFO | Loading FastEmbed models into VRAM using CUDAExecutionProvider...
+2026-06-30 14:20:28 | WARNING | Failed to set semantic cache: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\Users\TOQEE_~1\AppData\Local\Temp\fastembed_cache\models--Qdrant--Splade_PP_en_v1\snapshots\efcd182bc7eb351e81a9445752d4388c2bab500b\model.onnx failed:bad allocation
+2026-06-30 14:25:42 | INFO | Processing new documents via API...
+2026-06-30 14:25:42 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf to async API for Qdrant indexing...
+2026-06-30 14:25:44 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-30 14:25:44 | INFO | Processing and caching: resume.pdf
+2026-06-30 14:25:53 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-06-30 14:25:56 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-06-30 14:26:19 | INFO | Saved verified answer to Semantic Cache.
+2026-06-30 15:39:13 | INFO | Processing new documents via API...
+2026-06-30 15:39:13 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf to async API for Qdrant indexing...
+2026-06-30 15:39:15 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-30 15:39:15 | INFO | Processing and caching: resume.pdf
+2026-06-30 15:39:44 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-06-30 15:39:44 | INFO | Celery detected: Loading FastEmbed models into VRAM (CUDA)...
+2026-06-30 15:39:51 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-06-30 15:40:07 | INFO | Saved verified answer to Semantic Cache.
+2026-06-30 15:44:29 | INFO | Processing new documents via API...
+2026-06-30 15:44:29 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\b35a5cae15032bda7f343277efd22bdaad525d6e007218184b92847b04230e1e\resume.pdf to async API for Qdrant indexing...
+2026-06-30 15:44:32 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-30 15:44:32 | INFO | Processing and caching: resume.pdf
+2026-06-30 15:44:38 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-06-30 15:44:41 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-06-30 15:44:57 | INFO | Saved verified answer to Semantic Cache.
+2026-06-30 15:47:14 | INFO | Processing new documents via API...
+2026-06-30 15:47:14 | INFO | Sending C:\Users\toqee_41ka4vz\AppData\Local\Temp\gradio\be1d34f3f7114a50cefe00257c24027f68a04176fe239a8debdbb0b296f27c88\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to async API for Qdrant indexing...
+2026-06-30 15:47:15 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 15:47:15 | INFO | Processing and caching: The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 15:47:39 | ERROR | Failed to process C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf: Unable to allocate 1.16 MiB for an array with shape (704, 432) and data type float32
+2026-06-30 15:47:39 | ERROR | Task failed for job 46d92be5-7ad5-4e22-a2cd-6b294727b3fc: Unable to allocate 1.16 MiB for an array with shape (704, 432) and data type float32
+2026-06-30 15:47:42 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 15:47:43 | INFO | Processing and caching: The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 15:47:44 | ERROR | Failed to process C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf: 
+2026-06-30 15:47:44 | ERROR | Task failed for job 46d92be5-7ad5-4e22-a2cd-6b294727b3fc: 
+2026-06-30 15:47:45 | ERROR | Processing error: Processing failed: 
+2026-06-30 15:47:46 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 15:47:49 | INFO | Processing and caching: The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 15:49:00 | ERROR | Failed to process C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf: CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling cublasLtMatmul with transpose_mat1 1 transpose_mat2 0 m 1024 n 4 k 512 mat1_ld 512 mat2_ld 512 result_ld 1024 abcType 0 computeType 68 scaleType 0
+2026-06-30 15:49:00 | ERROR | Task failed for job 46d92be5-7ad5-4e22-a2cd-6b294727b3fc: CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling cublasLtMatmul with transpose_mat1 1 transpose_mat2 0 m 1024 n 4 k 512 mat1_ld 512 mat2_ld 512 result_ld 1024 abcType 0 computeType 68 scaleType 0
+2026-06-30 15:49:05 | INFO | Successfully downloaded The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf to C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 15:49:05 | INFO | Processing and caching: The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf
+2026-06-30 15:49:09 | ERROR | Failed to process C:\tmp\ragnr\The Ultimate Upwork Guide by Faraz Ahmed aka Faraz The Web Guy 2.pdf: CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling cublasLtMatmul with transpose_mat1 1 transpose_mat2 0 m 1024 n 4 k 512 mat1_ld 512 mat2_ld 512 result_ld 1024 abcType 0 computeType 68 scaleType 0
+2026-06-30 15:49:09 | ERROR | Task failed for job 46d92be5-7ad5-4e22-a2cd-6b294727b3fc: CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling cublasLtMatmul with transpose_mat1 1 transpose_mat2 0 m 1024 n 4 k 512 mat1_ld 512 mat2_ld 512 result_ld 1024 abcType 0 computeType 68 scaleType 0
+2026-06-30 20:27:35 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-30 20:27:35 | INFO | Loading from cache: resume.pdf
+2026-06-30 20:27:43 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-30 20:27:44 | INFO | Loading from cache: resume.pdf
+2026-06-30 20:27:45 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-06-30 20:27:45 | INFO | Celery detected: Loading FastEmbed models into VRAM (CUDA)...
+2026-06-30 20:27:47 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-06-30 20:27:47 | INFO | Celery detected: Loading FastEmbed models into VRAM (CUDA)...
+2026-06-30 20:27:58 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-30 20:27:58 | INFO | Loading from cache: resume.pdf
+2026-06-30 20:27:59 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-06-30 20:38:08 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-30 20:38:09 | INFO | Loading from cache: resume.pdf
+2026-06-30 20:38:15 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-06-30 20:39:26 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-30 20:39:27 | INFO | Loading from cache: resume.pdf
+2026-06-30 20:39:34 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-06-30 20:50:15 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-30 20:50:15 | INFO | Loading from cache: resume.pdf
+2026-06-30 20:50:24 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-06-30 20:50:26 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-30 20:50:26 | INFO | Loading from cache: resume.pdf
+2026-06-30 20:50:27 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-06-30 21:00:21 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-06-30 21:00:22 | INFO | Loading from cache: resume.pdf
+2026-06-30 21:00:24 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-06-30 21:00:32 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-06-30 21:00:32 | INFO | Celery detected: Loading FastEmbed models into VRAM (CUDA)...
+2026-06-30 21:23:44 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-01 12:19:17 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-01 12:23:53 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-07-01 12:23:53 | INFO | Loading from cache: resume.pdf
+2026-07-01 12:24:09 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-07-01 12:24:09 | INFO | Celery detected: Loading FastEmbed models into VRAM (CUDA)...
+2026-07-01 12:25:00 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-07-01 12:25:00 | INFO | Loading from cache: resume.pdf
+2026-07-01 12:25:06 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-07-01 15:50:09 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-07-01 15:50:09 | INFO | Processing and caching: resume.pdf
+2026-07-01 15:51:41 | INFO | Creating Qdrant collection: ragnr_documents
+2026-07-01 15:51:41 | INFO | Celery detected: Loading FastEmbed models into VRAM (CUDA)...
+2026-07-01 15:51:45 | INFO | Hybrid collection created successfully.
+2026-07-01 15:51:45 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-07-01 16:04:29 | INFO | Successfully downloaded resume.pdf to C:\tmp\ragnr\resume.pdf
+2026-07-01 16:04:30 | INFO | Processing and caching: resume.pdf
+2026-07-01 16:05:08 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-01 16:05:50 | INFO | Indexing 8 chunks to Qdrant with batch_size=32...
+2026-07-01 16:05:50 | INFO | Celery detected: Loading FastEmbed models into VRAM (CUDA)...
+2026-07-01 16:17:21 | INFO | Successfully downloaded Metamorphosis.pdf to C:\tmp\ragnr\Metamorphosis.pdf
+2026-07-01 16:17:21 | INFO | Processing and caching: Metamorphosis.pdf
+2026-07-01 16:18:04 | INFO | Indexing 197 chunks to Qdrant with batch_size=32...
+2026-07-01 16:18:58 | ERROR | Task failed for job 3bfb33bd-3edf-467d-a432-7f2276c73d61: Unable to allocate 477. MiB for an array with shape (32, 128, 30522) and data type float32
+2026-07-01 16:19:00 | INFO | Successfully downloaded Metamorphosis.pdf to C:\tmp\ragnr\Metamorphosis.pdf
+2026-07-01 16:19:01 | INFO | Loading from cache: Metamorphosis.pdf
+2026-07-01 16:19:06 | INFO | Indexing 197 chunks to Qdrant with batch_size=32...
+2026-07-01 16:19:08 | ERROR | Task failed for job 3bfb33bd-3edf-467d-a432-7f2276c73d61: Unable to allocate 954. MiB for an array with shape (32, 128, 30522) and data type float64
+2026-07-01 16:19:11 | INFO | Successfully downloaded Metamorphosis.pdf to C:\tmp\ragnr\Metamorphosis.pdf
+2026-07-01 16:19:11 | INFO | Loading from cache: Metamorphosis.pdf
+2026-07-01 16:19:12 | INFO | Indexing 197 chunks to Qdrant with batch_size=32...
+2026-07-01 16:19:15 | ERROR | Task failed for job 3bfb33bd-3edf-467d-a432-7f2276c73d61: Unable to allocate 954. MiB for an array with shape (32, 128, 30522) and data type float64
+2026-07-01 16:19:20 | INFO | Successfully downloaded Metamorphosis.pdf to C:\tmp\ragnr\Metamorphosis.pdf
+2026-07-01 16:19:21 | INFO | Loading from cache: Metamorphosis.pdf
+2026-07-01 16:19:25 | INFO | Indexing 197 chunks to Qdrant with batch_size=32...
+2026-07-01 16:19:31 | ERROR | Task failed for job 3bfb33bd-3edf-467d-a432-7f2276c73d61: Unable to allocate 477. MiB for an array with shape (32, 128, 30522) and data type float32
+2026-07-01 16:29:12 | INFO | Successfully downloaded 2506.18027v3.pdf to C:\tmp\ragnr\2506.18027v3.pdf
+2026-07-01 16:29:12 | INFO | Processing and caching: 2506.18027v3.pdf
+2026-07-01 16:30:15 | INFO | Indexing 73 chunks to Qdrant with batch_size=32...
+2026-07-01 16:30:15 | INFO | Celery detected: Loading FastEmbed models into VRAM (CUDA)...
+2026-07-01 16:30:21 | ERROR | Task failed for job 8087875b-2d41-4a04-8d11-3413414fa77d: Unable to allocate 477. MiB for an array with shape (32, 128, 30522) and data type float32
+2026-07-01 16:30:27 | INFO | Successfully downloaded 2506.18027v3.pdf to C:\tmp\ragnr\2506.18027v3.pdf
+2026-07-01 16:30:29 | INFO | Loading from cache: 2506.18027v3.pdf
+2026-07-01 16:30:31 | INFO | Indexing 73 chunks to Qdrant with batch_size=32...
+2026-07-01 16:30:32 | ERROR | Task failed for job 8087875b-2d41-4a04-8d11-3413414fa77d: Unable to allocate 477. MiB for an array with shape (32, 128, 30522) and data type float32
+2026-07-01 16:30:35 | INFO | Successfully downloaded 2506.18027v3.pdf to C:\tmp\ragnr\2506.18027v3.pdf
+2026-07-01 16:30:35 | INFO | Loading from cache: 2506.18027v3.pdf
+2026-07-01 16:30:35 | INFO | Indexing 73 chunks to Qdrant with batch_size=32...
+2026-07-01 16:30:36 | ERROR | Task failed for job 8087875b-2d41-4a04-8d11-3413414fa77d: Unable to allocate 477. MiB for an array with shape (32, 128, 30522) and data type float32
+2026-07-01 16:30:40 | INFO | Successfully downloaded 2506.18027v3.pdf to C:\tmp\ragnr\2506.18027v3.pdf
+2026-07-01 16:30:40 | INFO | Loading from cache: 2506.18027v3.pdf
+2026-07-01 16:30:41 | INFO | Indexing 73 chunks to Qdrant with batch_size=32...
+2026-07-01 16:30:42 | ERROR | Task failed for job 8087875b-2d41-4a04-8d11-3413414fa77d: Unable to allocate 477. MiB for an array with shape (32, 128, 30522) and data type float32
+2026-07-01 16:36:09 | INFO | Successfully downloaded 2506.18027v3.pdf to C:\tmp\ragnr\2506.18027v3.pdf
+2026-07-01 16:36:09 | INFO | Loading from cache: 2506.18027v3.pdf
+2026-07-01 16:36:27 | INFO | Indexing 73 chunks to Qdrant with batch_size=4...
+2026-07-01 16:36:27 | INFO | Celery detected: Loading FastEmbed models into VRAM (CUDA)...
+2026-07-01 16:39:27 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-01 16:51:10 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-01 16:54:29 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-01 17:15:13 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-01 21:03:19 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 11:42:08 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 11:48:48 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 12:08:39 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 12:11:44 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 12:12:30 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 12:15:35 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 12:19:13 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 12:21:21 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 12:27:07 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 12:49:04 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 13:14:51 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 13:48:04 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 13:54:31 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 13:58:01 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 14:39:37 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 14:41:00 | INFO | Saved verified answer to Exact Cache.
+2026-07-06 14:41:00 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 14:41:07 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 14:41:59 | INFO | Exact Cache HIT!
+2026-07-06 14:42:04 | INFO | Semantic Cache HIT! Score: 1.000
+2026-07-06 15:02:34 | INFO | Successfully downloaded rag_research-arxiv.pdf to C:\tmp\ragnr\rag_research-arxiv.pdf
+2026-07-06 15:02:34 | INFO | Processing and caching: rag_research-arxiv.pdf
+2026-07-06 15:14:41 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-06 15:14:42 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-06 15:18:21 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-06 15:18:21 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-06 15:18:54 | ERROR | Failed to process C:\tmp\ragnr\rag_research-arxiv_compressed.pdf: CUDA error: unknown error
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2026-07-06 15:18:54 | ERROR | Task failed for job 60488c86-60d8-4f2b-8e2e-b1838e54a0f4: CUDA error: unknown error
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2026-07-06 15:18:56 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-06 15:18:57 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-06 15:19:04 | ERROR | Failed to process C:\tmp\ragnr\rag_research-arxiv_compressed.pdf: [WinError -536870904] Windows Error 0xe0000008
+2026-07-06 15:19:04 | ERROR | Task failed for job 60488c86-60d8-4f2b-8e2e-b1838e54a0f4: [WinError -536870904] Windows Error 0xe0000008
+2026-07-06 15:19:06 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-06 15:19:08 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-06 15:19:09 | ERROR | Failed to process C:\tmp\ragnr\rag_research-arxiv_compressed.pdf: [WinError -536870904] Windows Error 0xe0000008
+2026-07-06 15:19:09 | ERROR | Task failed for job 60488c86-60d8-4f2b-8e2e-b1838e54a0f4: [WinError -536870904] Windows Error 0xe0000008
+2026-07-06 15:19:13 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-06 15:19:15 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-06 15:19:16 | ERROR | Failed to process C:\tmp\ragnr\rag_research-arxiv_compressed.pdf: CUDA error: unknown error
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2026-07-06 15:19:16 | ERROR | Task failed for job 60488c86-60d8-4f2b-8e2e-b1838e54a0f4: CUDA error: unknown error
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2026-07-06 15:22:20 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-06 15:22:21 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-06 15:23:19 | ERROR | Failed to process C:\tmp\ragnr\rag_research-arxiv_compressed.pdf: CUDA error: unknown error
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2026-07-06 15:23:19 | ERROR | Task failed for job 0b75b6f5-19ad-494c-a3f6-749963036676: CUDA error: unknown error
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2026-07-06 15:23:21 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-06 15:23:22 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-06 15:23:23 | ERROR | Failed to process C:\tmp\ragnr\rag_research-arxiv_compressed.pdf: CUDA error: unknown error
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2026-07-06 15:23:23 | ERROR | Task failed for job 0b75b6f5-19ad-494c-a3f6-749963036676: CUDA error: unknown error
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2026-07-06 15:23:25 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-06 15:23:25 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-06 15:23:26 | ERROR | Failed to process C:\tmp\ragnr\rag_research-arxiv_compressed.pdf: std::bad_alloc
+2026-07-06 15:23:26 | ERROR | Task failed for job 0b75b6f5-19ad-494c-a3f6-749963036676: std::bad_alloc
+2026-07-06 15:23:30 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-06 15:23:30 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-06 15:23:32 | ERROR | Failed to process C:\tmp\ragnr\rag_research-arxiv_compressed.pdf: [WinError -536870904] Windows Error 0xe0000008
+2026-07-06 15:23:32 | ERROR | Task failed for job 0b75b6f5-19ad-494c-a3f6-749963036676: [WinError -536870904] Windows Error 0xe0000008
+2026-07-06 15:46:36 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-06 15:46:36 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-06 15:48:15 | INFO | Indexing 73 chunks to Qdrant with batch_size=4...
+2026-07-06 15:48:15 | INFO | Celery detected: Loading FastEmbed models into VRAM (CUDA)...
+2026-07-06 15:52:42 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 15:53:47 | INFO | Saved verified answer to Exact Cache.
+2026-07-06 15:53:49 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 16:03:05 | INFO | Successfully downloaded policy_compressed.pdf to C:\tmp\ragnr\policy_compressed.pdf
+2026-07-06 16:03:05 | INFO | Processing and caching: policy_compressed.pdf
+2026-07-06 16:03:32 | INFO | Indexing 128 chunks to Qdrant with batch_size=4...
+2026-07-06 16:09:17 | INFO | Saved verified answer to Exact Cache.
+2026-07-06 16:09:20 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 16:11:25 | INFO | Exact Cache HIT!
+2026-07-06 16:15:58 | INFO | Exact Cache HIT!
+2026-07-06 16:17:02 | INFO | Semantic Cache HIT! Score: 1.000
+2026-07-06 16:17:17 | INFO | Semantic Cache HIT! Score: 1.000
+2026-07-06 16:24:36 | INFO | Semantic Cache HIT! Score: 1.000
+2026-07-06 16:43:22 | INFO | Saved verified answer to Exact Cache.
+2026-07-06 16:43:22 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 16:43:26 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 16:45:20 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 16:45:26 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 16:46:06 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 16:46:13 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 16:46:15 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 17:06:27 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-06 17:06:27 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-06 17:08:18 | INFO | Indexing 73 chunks to Qdrant with batch_size=4...
+2026-07-06 17:08:18 | INFO | Celery detected: Loading FastEmbed models into VRAM (CUDA)...
+2026-07-06 17:09:29 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 17:10:17 | INFO | Saved verified answer to Exact Cache.
+2026-07-06 17:10:18 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 17:11:00 | INFO | Successfully downloaded policy_compressed.pdf to C:\tmp\ragnr\policy_compressed.pdf
+2026-07-06 17:11:01 | INFO | Processing and caching: policy_compressed.pdf
+2026-07-06 17:11:32 | INFO | Indexing 128 chunks to Qdrant with batch_size=4...
+2026-07-06 17:13:15 | INFO | Saved verified answer to Exact Cache.
+2026-07-06 17:13:18 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 17:13:35 | INFO | Exact Cache HIT!
+2026-07-06 17:14:04 | INFO | Exact Cache HIT!
+2026-07-06 17:14:28 | INFO | Semantic Cache HIT! Score: 1.000
+2026-07-06 17:15:07 | INFO | Semantic Cache HIT! Score: 1.000
+2026-07-06 17:18:00 | INFO | Semantic Cache HIT! Score: 1.000
+2026-07-06 17:28:19 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 17:28:23 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 17:29:35 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 17:31:07 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 17:32:16 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 17:33:15 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 17:34:10 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 17:35:28 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 17:36:24 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 17:42:26 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-06 17:42:26 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-06 17:43:30 | INFO | Indexing 73 chunks to Qdrant with batch_size=4...
+2026-07-06 17:43:30 | INFO | Celery detected: Loading FastEmbed models into VRAM (CUDA)...
+2026-07-06 17:44:12 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 17:45:27 | INFO | Saved verified answer to Exact Cache.
+2026-07-06 17:45:31 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 17:45:54 | INFO | Successfully downloaded policy_compressed.pdf to C:\tmp\ragnr\policy_compressed.pdf
+2026-07-06 17:45:55 | INFO | Processing and caching: policy_compressed.pdf
+2026-07-06 17:46:35 | INFO | Indexing 128 chunks to Qdrant with batch_size=4...
+2026-07-06 17:47:33 | INFO | Saved verified answer to Exact Cache.
+2026-07-06 17:47:37 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 17:47:47 | INFO | Exact Cache HIT!
+2026-07-06 17:54:34 | INFO | Exact Cache HIT!
+2026-07-06 17:54:47 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 17:57:23 | INFO | Saved verified answer to Exact Cache.
+2026-07-06 17:57:27 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 17:58:35 | INFO | Saved verified answer to Exact Cache.
+2026-07-06 17:58:39 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 18:24:52 | INFO | Exact Cache HIT!
+2026-07-06 18:25:47 | INFO | Successfully downloaded policy_compressed.pdf to C:\tmp\ragnr\policy_compressed.pdf
+2026-07-06 18:25:47 | INFO | Processing and caching: policy_compressed.pdf
+2026-07-06 18:26:42 | INFO | Indexing 128 chunks to Qdrant with batch_size=4...
+2026-07-06 18:26:42 | INFO | Celery detected: Loading FastEmbed models into VRAM (CUDA)...
+2026-07-06 18:27:11 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 18:28:10 | INFO | Saved verified answer to Exact Cache.
+2026-07-06 18:28:12 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 18:30:51 | INFO | Exact Cache HIT!
+2026-07-06 18:37:12 | INFO | Creating Qdrant collection: semantic_cache
+2026-07-06 18:37:12 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 18:37:16 | INFO | Semantic Cache collection created successfully.
+2026-07-06 18:38:52 | INFO | Creating Qdrant collection: ragnr_documents
+2026-07-06 18:38:52 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 18:40:28 | INFO | Successfully downloaded policy_compressed.pdf to C:\tmp\ragnr\policy_compressed.pdf
+2026-07-06 18:40:29 | INFO | Processing and caching: policy_compressed.pdf
+2026-07-06 18:42:10 | INFO | Indexing 128 chunks to Qdrant with batch_size=4...
+2026-07-06 18:42:10 | INFO | Celery detected: Loading FastEmbed models into VRAM (CUDA)...
+2026-07-06 18:42:56 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 18:47:09 | INFO | Query App detected: Loading FastEmbed models on CPU to save VRAM...
+2026-07-06 18:49:12 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-06 18:50:25 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-06 18:51:28 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-06 18:52:35 | INFO | Saved verified answer to Exact Cache.
+2026-07-06 18:52:36 | WARNING | Failed to set semantic cache: argument of type 'NoneType' is not iterable
+2026-07-06 20:50:18 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-06 20:51:54 | INFO | Saved verified answer to Exact Cache.
+2026-07-06 20:51:54 | WARNING | Failed to set semantic cache: argument of type 'NoneType' is not iterable
+2026-07-06 21:02:20 | INFO | Successfully downloaded policy_compressed.pdf to C:\tmp\ragnr\policy_compressed.pdf
+2026-07-06 21:02:20 | INFO | Processing and caching: policy_compressed.pdf
+2026-07-06 21:03:34 | INFO | Indexing 128 chunks to Qdrant with batch_size=4...
+2026-07-06 21:03:34 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-06 21:06:04 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-06 21:07:14 | INFO | Saved verified answer to Exact Cache.
+2026-07-06 21:07:15 | INFO | Saved verified answer to Semantic Cache.
+2026-07-06 21:18:00 | INFO | Exact Cache HIT!
+2026-07-07 00:44:12 | INFO | Successfully downloaded policy_compressed.pdf to C:\tmp\ragnr\policy_compressed.pdf
+2026-07-07 00:44:13 | INFO | Processing and caching: policy_compressed.pdf
+2026-07-07 00:46:57 | ERROR | Failed to process C:\tmp\ragnr\policy_compressed.pdf: 'PictureItem' object has no attribute 'text'
+2026-07-07 00:46:57 | ERROR | Task failed for job 9a98334f-db29-40e3-8c4b-288371833ed7: 'PictureItem' object has no attribute 'text'
+2026-07-07 00:47:00 | INFO | Successfully downloaded policy_compressed.pdf to C:\tmp\ragnr\policy_compressed.pdf
+2026-07-07 00:47:01 | INFO | Processing and caching: policy_compressed.pdf
+2026-07-07 00:47:53 | ERROR | Failed to process C:\tmp\ragnr\policy_compressed.pdf: 'PictureItem' object has no attribute 'text'
+2026-07-07 00:47:53 | ERROR | Task failed for job 9a98334f-db29-40e3-8c4b-288371833ed7: 'PictureItem' object has no attribute 'text'
+2026-07-07 00:47:55 | INFO | Successfully downloaded policy_compressed.pdf to C:\tmp\ragnr\policy_compressed.pdf
+2026-07-07 00:47:55 | INFO | Processing and caching: policy_compressed.pdf
+2026-07-07 00:48:43 | ERROR | Failed to process C:\tmp\ragnr\policy_compressed.pdf: 'PictureItem' object has no attribute 'text'
+2026-07-07 00:48:43 | ERROR | Task failed for job 9a98334f-db29-40e3-8c4b-288371833ed7: 'PictureItem' object has no attribute 'text'
+2026-07-07 00:48:47 | INFO | Successfully downloaded policy_compressed.pdf to C:\tmp\ragnr\policy_compressed.pdf
+2026-07-07 00:48:47 | INFO | Processing and caching: policy_compressed.pdf
+2026-07-07 00:49:35 | ERROR | Failed to process C:\tmp\ragnr\policy_compressed.pdf: 'PictureItem' object has no attribute 'text'
+2026-07-07 00:49:35 | ERROR | Task failed for job 9a98334f-db29-40e3-8c4b-288371833ed7: 'PictureItem' object has no attribute 'text'
+2026-07-07 01:26:13 | INFO | Successfully downloaded policy_compressed.pdf to C:\tmp\ragnr\policy_compressed.pdf
+2026-07-07 01:26:13 | INFO | Processing and caching: policy_compressed.pdf
+2026-07-07 01:27:29 | INFO | Indexing 113 chunks to Qdrant with batch_size=4...
+2026-07-07 01:27:29 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-07 01:28:42 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-07 01:33:42 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-07 01:36:36 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-07 01:37:28 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-07 01:49:49 | INFO | Successfully downloaded policy_compressed.pdf to C:\tmp\ragnr\policy_compressed.pdf
+2026-07-07 01:49:49 | INFO | Processing and caching: policy_compressed.pdf
+2026-07-07 01:51:07 | INFO | Indexing 113 chunks to Qdrant with batch_size=4...
+2026-07-07 01:51:07 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-07 01:54:09 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-07 01:55:00 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 01:55:01 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 01:57:35 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 01:57:35 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-07 01:58:30 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 01:58:30 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-07 01:59:06 | ERROR | Task failed for job d949c33a-7d87-4951-b9e5-998cbb9dec4b: [ONNXRuntimeError] : 6 : RUNTIME_EXCEPTION : Exception during initialization: bad allocation
+2026-07-07 01:59:16 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 01:59:16 | INFO | Loading from cache: rag_research-arxiv_compressed.pdf
+2026-07-07 01:59:17 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 01:59:17 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-07 01:59:17 | ERROR | Task failed for job d949c33a-7d87-4951-b9e5-998cbb9dec4b: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\Users\TOQEE_~1\AppData\Local\Temp\fastembed_cache\models--Qdrant--Splade_PP_en_v1\snapshots\efcd182bc7eb351e81a9445752d4388c2bab500b\model.onnx failed:bad allocation
+2026-07-07 01:59:19 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 01:59:19 | INFO | Loading from cache: rag_research-arxiv_compressed.pdf
+2026-07-07 01:59:20 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 01:59:20 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-07 01:59:21 | ERROR | Task failed for job d949c33a-7d87-4951-b9e5-998cbb9dec4b: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\Users\TOQEE_~1\AppData\Local\Temp\fastembed_cache\models--Qdrant--Splade_PP_en_v1\snapshots\efcd182bc7eb351e81a9445752d4388c2bab500b\model.onnx failed:bad allocation
+2026-07-07 01:59:25 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 01:59:25 | INFO | Loading from cache: rag_research-arxiv_compressed.pdf
+2026-07-07 01:59:25 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 01:59:25 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-07 01:59:27 | ERROR | Task failed for job d949c33a-7d87-4951-b9e5-998cbb9dec4b: [ONNXRuntimeError] : 1 : FAIL : Load model from C:\Users\TOQEE_~1\AppData\Local\Temp\fastembed_cache\models--Qdrant--Splade_PP_en_v1\snapshots\efcd182bc7eb351e81a9445752d4388c2bab500b\model.onnx failed:bad allocation
+2026-07-07 02:06:35 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 02:06:35 | INFO | Loading from cache: rag_research-arxiv_compressed.pdf
+2026-07-07 02:06:48 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 02:06:48 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-07 02:08:06 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-07 02:08:57 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 02:08:58 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 02:09:40 | INFO | Exact Cache HIT!
+2026-07-07 02:17:23 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 02:17:23 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 02:52:29 | INFO | Exact Cache HIT!
+2026-07-07 02:55:35 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 02:55:36 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-07 02:56:45 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 02:56:45 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-07 02:57:22 | INFO | Loading FastEmbed models into VRAM (CUDA) to save System RAM...
+2026-07-07 02:58:19 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 02:58:20 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 02:59:14 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 02:59:15 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 03:00:05 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 03:00:05 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 03:00:52 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 03:00:53 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 03:23:50 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 03:23:53 | INFO | Models loaded successfully.
+2026-07-07 03:29:10 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 03:29:15 | INFO | Models loaded successfully.
+2026-07-07 03:30:55 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 03:30:57 | INFO | Models loaded successfully.
+2026-07-07 03:33:58 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 03:34:01 | INFO | Models loaded successfully.
+2026-07-07 03:43:32 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 03:43:37 | INFO | Models loaded successfully.
+2026-07-07 12:40:02 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 12:40:02 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-07 12:41:04 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 12:41:04 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 12:41:07 | INFO | Models loaded successfully.
+2026-07-07 12:45:28 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 12:45:33 | INFO | Models loaded successfully.
+2026-07-07 12:46:07 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 12:46:07 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 12:47:19 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 12:47:20 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 12:50:42 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 12:50:44 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 12:57:24 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 12:57:24 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-07 12:58:08 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 13:00:21 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 13:00:22 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 13:02:38 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 13:02:39 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 13:03:19 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 13:03:20 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 13:04:15 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 13:04:17 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 13:05:54 | INFO | Exact Cache HIT!
+2026-07-07 13:06:21 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 13:06:23 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 13:06:47 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 13:06:47 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 13:32:08 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 13:32:15 | INFO | Models loaded successfully.
+2026-07-07 13:41:44 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 13:41:46 | INFO | Models loaded successfully.
+2026-07-07 13:56:59 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 13:57:02 | INFO | Models loaded successfully.
+2026-07-07 14:08:54 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 14:08:54 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-07 14:11:01 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 14:11:01 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 14:11:03 | INFO | Models loaded successfully.
+2026-07-07 14:12:49 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 14:12:52 | INFO | Models loaded successfully.
+2026-07-07 14:13:36 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 14:13:38 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 14:14:54 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 14:14:55 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 14:17:26 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 14:17:28 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 14:19:05 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 14:19:06 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 14:21:01 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 14:21:02 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 14:32:25 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 14:32:25 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-07 14:33:19 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 14:33:19 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 14:33:22 | INFO | Models loaded successfully.
+2026-07-07 14:34:16 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 14:34:22 | INFO | Models loaded successfully.
+2026-07-07 14:35:09 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 14:35:10 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 14:36:51 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 14:36:52 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 14:39:03 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 14:39:04 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 14:40:52 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 14:40:57 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 14:44:22 | INFO | Exact Cache HIT!
+2026-07-07 15:00:18 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 15:00:19 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-07 15:01:15 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 15:01:15 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 15:01:19 | INFO | Models loaded successfully.
+2026-07-07 15:02:31 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 15:02:39 | INFO | Models loaded successfully.
+2026-07-07 15:03:36 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 15:03:39 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 15:04:56 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 15:04:57 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 15:08:24 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 15:08:25 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 15:23:53 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 15:23:54 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-07 15:25:28 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 15:25:28 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 15:25:30 | INFO | Models loaded successfully.
+2026-07-07 15:26:52 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 15:27:00 | INFO | Models loaded successfully.
+2026-07-07 15:27:54 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 15:27:55 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 15:28:52 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 15:28:52 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 15:40:25 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 15:40:26 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-07 15:41:23 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 15:41:23 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 15:41:26 | INFO | Models loaded successfully.
+2026-07-07 15:42:31 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 15:42:37 | INFO | Models loaded successfully.
+2026-07-07 15:43:23 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 15:43:24 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 15:44:26 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 15:44:27 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 15:45:36 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 15:45:38 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 17:18:24 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 17:18:25 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-07 17:19:38 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 17:19:38 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 17:19:41 | INFO | Models loaded successfully.
+2026-07-07 17:20:36 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 17:20:41 | INFO | Models loaded successfully.
+2026-07-07 17:21:25 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 17:21:27 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 17:23:37 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 17:23:41 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 17:26:10 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 17:26:11 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 17:27:30 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 17:27:30 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 17:35:03 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 17:35:06 | INFO | Models loaded successfully.
+2026-07-07 17:35:33 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 17:35:35 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 17:36:59 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 17:37:00 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 17:50:27 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 17:50:29 | INFO | Models loaded successfully.
+2026-07-07 17:50:30 | INFO | Semantic Cache HIT! Score: 0.985
+2026-07-07 17:56:11 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 17:56:12 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-07 17:57:37 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 17:57:37 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 17:57:42 | INFO | Models loaded successfully.
+2026-07-07 17:58:33 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 17:58:37 | INFO | Models loaded successfully.
+2026-07-07 18:00:24 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 18:00:25 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 18:09:08 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 18:09:13 | INFO | Models loaded successfully.
+2026-07-07 18:10:11 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 18:10:15 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 18:11:30 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 18:11:31 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 20:59:28 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 20:59:30 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-07 21:01:49 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 21:01:49 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 21:01:57 | INFO | Models loaded successfully.
+2026-07-07 21:05:09 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 21:05:16 | INFO | Models loaded successfully.
+2026-07-07 21:06:05 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 21:06:07 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 21:06:56 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 21:06:56 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 21:09:49 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 21:09:50 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 21:27:56 | INFO | Creating Qdrant collection: semantic_cache
+2026-07-07 21:27:56 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 21:27:59 | INFO | Models loaded successfully.
+2026-07-07 21:27:59 | INFO | Semantic Cache collection created successfully.
+2026-07-07 21:27:59 | INFO | Creating Qdrant collection: semantic_cache
+2026-07-07 21:28:00 | INFO | Semantic Cache collection created successfully.
+2026-07-07 21:29:11 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 21:29:13 | INFO | Models loaded successfully.
+2026-07-07 21:29:56 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 21:29:56 | WARNING | Failed to set semantic cache: argument of type 'NoneType' is not iterable
+2026-07-07 21:32:18 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-07 21:32:20 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-07 21:33:25 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-07 21:33:25 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 21:33:29 | INFO | Models loaded successfully.
+2026-07-07 21:34:43 | INFO | Loading FastEmbed models into System RAM...
+2026-07-07 21:34:49 | INFO | Models loaded successfully.
+2026-07-07 21:35:34 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 21:35:35 | INFO | Saved verified answer to Semantic Cache.
+2026-07-07 21:38:00 | INFO | Saved verified answer to Exact Cache.
+2026-07-07 21:38:01 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 13:15:27 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-08 13:15:27 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-08 13:17:11 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-08 13:17:11 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 13:17:14 | INFO | Models loaded successfully.
+2026-07-08 13:23:24 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 13:23:29 | INFO | Models loaded successfully.
+2026-07-08 13:24:30 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 13:24:30 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 13:39:25 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-08 13:39:25 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-08 13:41:00 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-08 13:41:00 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 13:41:02 | INFO | Models loaded successfully.
+2026-07-08 13:41:43 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 13:41:47 | INFO | Models loaded successfully.
+2026-07-08 13:42:25 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 13:42:26 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 13:55:06 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 13:55:10 | INFO | Models loaded successfully.
+2026-07-08 13:55:36 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 13:55:36 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 14:04:38 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-08 14:04:38 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-08 14:05:33 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-08 14:05:33 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 14:05:36 | INFO | Models loaded successfully.
+2026-07-08 14:06:24 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 14:06:32 | INFO | Models loaded successfully.
+2026-07-08 14:07:16 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 14:07:18 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 14:08:15 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 14:08:17 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 14:16:27 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 14:16:29 | INFO | Models loaded successfully.
+2026-07-08 14:16:54 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 14:16:55 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 14:18:28 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 14:18:29 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 14:20:49 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 14:20:49 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 14:22:18 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 14:22:19 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 15:28:57 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 15:29:00 | INFO | Models loaded successfully.
+2026-07-08 15:29:01 | INFO | Semantic Cache HIT! Score: 0.967
+2026-07-08 15:31:36 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 15:31:37 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 15:34:43 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-08 15:34:43 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-08 15:35:46 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-08 15:35:46 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 15:35:48 | INFO | Models loaded successfully.
+2026-07-08 15:36:36 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 15:36:42 | INFO | Models loaded successfully.
+2026-07-08 15:37:36 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 15:37:39 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 15:47:06 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 15:47:12 | INFO | Models loaded successfully.
+2026-07-08 16:03:03 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-08 16:03:03 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-08 16:04:03 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-08 16:04:03 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 16:04:05 | INFO | Models loaded successfully.
+2026-07-08 16:04:54 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 16:04:57 | INFO | Models loaded successfully.
+2026-07-08 16:05:46 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 16:05:47 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 16:06:25 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 16:06:25 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 16:10:04 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 16:10:04 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 16:12:17 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 16:12:17 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 16:13:16 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 16:13:16 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 16:13:45 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 16:13:46 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 16:24:18 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-08 16:24:18 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-08 16:25:20 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-08 16:25:20 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 16:25:23 | INFO | Models loaded successfully.
+2026-07-08 16:26:18 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 16:26:21 | INFO | Models loaded successfully.
+2026-07-08 16:26:58 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 16:26:58 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 16:27:43 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 16:27:43 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 16:29:15 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 16:29:16 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 16:52:03 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-08 16:52:04 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-08 16:52:53 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-08 16:52:53 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 16:52:56 | INFO | Models loaded successfully.
+2026-07-08 16:58:56 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 16:59:02 | INFO | Models loaded successfully.
+2026-07-08 16:59:57 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 17:00:00 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 17:00:44 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 17:00:45 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 17:07:58 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-08 17:07:59 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-08 17:09:20 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-08 17:09:20 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 17:09:26 | INFO | Models loaded successfully.
+2026-07-08 17:10:17 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 17:10:23 | INFO | Models loaded successfully.
+2026-07-08 17:11:02 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 17:11:05 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 17:11:43 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 17:11:44 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 17:14:15 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 17:14:16 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 17:34:41 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-08 17:34:41 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-08 17:35:56 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-08 17:35:56 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 17:35:58 | INFO | Models loaded successfully.
+2026-07-08 17:36:45 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 17:36:51 | INFO | Models loaded successfully.
+2026-07-08 17:45:24 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 17:45:31 | INFO | Models loaded successfully.
+2026-07-08 17:46:12 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 17:46:14 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 17:46:38 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 17:46:38 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 17:47:47 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 17:47:48 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 18:03:43 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-08 18:03:43 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-08 18:05:05 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-08 18:05:05 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 18:05:09 | INFO | Models loaded successfully.
+2026-07-08 18:05:57 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 18:06:00 | INFO | Models loaded successfully.
+2026-07-08 19:13:30 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 19:13:34 | INFO | Models loaded successfully.
+2026-07-08 19:14:12 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 19:14:15 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 19:49:10 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 19:49:10 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 20:29:05 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 20:29:05 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 21:36:43 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 21:36:46 | INFO | Models loaded successfully.
+2026-07-08 21:37:36 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 21:37:39 | INFO | Models loaded successfully.
+2026-07-08 21:39:04 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 21:39:08 | INFO | Models loaded successfully.
+2026-07-08 21:41:14 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 21:41:16 | INFO | Models loaded successfully.
+2026-07-08 21:54:18 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 21:54:21 | INFO | Models loaded successfully.
+2026-07-08 23:37:10 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 23:37:13 | INFO | Models loaded successfully.
+2026-07-08 23:43:57 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 23:44:02 | INFO | Models loaded successfully.
+2026-07-08 23:45:07 | INFO | Saved verified answer to Exact Cache.
+2026-07-08 23:45:08 | INFO | Saved verified answer to Semantic Cache.
+2026-07-08 23:56:10 | INFO | Successfully downloaded policy_compressed.pdf to C:\tmp\ragnr\policy_compressed.pdf
+2026-07-08 23:56:11 | INFO | Processing and caching: policy_compressed.pdf
+2026-07-08 23:58:26 | INFO | Indexing 113 chunks to Qdrant with batch_size=4...
+2026-07-08 23:58:26 | INFO | Loading FastEmbed models into System RAM...
+2026-07-08 23:58:32 | INFO | Models loaded successfully.
+2026-07-09 00:12:02 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 00:12:03 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 00:30:14 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 00:30:16 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 01:17:01 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 01:17:03 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 12:05:21 | INFO | Loading FastEmbed models into System RAM...
+2026-07-09 12:05:27 | INFO | Models loaded successfully.
+2026-07-09 12:06:49 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 12:06:50 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 12:07:43 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 12:07:44 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 12:08:39 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 12:08:40 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 12:09:28 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 12:09:29 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 12:11:55 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 12:11:56 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 12:19:32 | INFO | Loading FastEmbed models into System RAM...
+2026-07-09 12:19:38 | INFO | Models loaded successfully.
+2026-07-09 12:20:18 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 12:20:19 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 12:23:33 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 12:23:33 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 12:24:06 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 12:24:06 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 12:25:00 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 12:25:01 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 13:08:19 | INFO | Loading FastEmbed models into System RAM...
+2026-07-09 13:08:21 | INFO | Models loaded successfully.
+2026-07-09 13:09:25 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 13:09:26 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 17:25:44 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 17:25:46 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 17:26:29 | INFO | Exact Cache HIT!
+2026-07-09 17:27:30 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 17:27:30 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 18:54:08 | INFO | Successfully downloaded HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf to C:\tmp\ragnr\HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf
+2026-07-09 18:54:08 | INFO | Processing and caching: HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf
+2026-07-09 19:00:04 | INFO | Indexing 374 chunks to Qdrant with batch_size=4...
+2026-07-09 19:00:04 | INFO | Loading FastEmbed models into System RAM...
+2026-07-09 19:00:07 | INFO | Models loaded successfully.
+2026-07-09 19:09:29 | INFO | Loading FastEmbed models into System RAM...
+2026-07-09 19:09:38 | INFO | Models loaded successfully.
+2026-07-09 19:10:34 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 19:10:39 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 19:11:25 | INFO | Saved verified answer to Exact Cache.
+2026-07-09 19:11:26 | INFO | Saved verified answer to Semantic Cache.
+2026-07-09 23:31:23 | INFO | Successfully downloaded HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf to C:\tmp\ragnr\HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf
+2026-07-09 23:31:23 | INFO | Processing and caching: HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf
+2026-07-09 23:37:06 | INFO | Indexing 374 chunks to Qdrant with batch_size=4...
+2026-07-09 23:37:06 | INFO | Loading FastEmbed models into System RAM...
+2026-07-09 23:37:09 | INFO | Models loaded successfully.
+2026-07-09 23:41:51 | INFO | Loading FastEmbed models into System RAM...
+2026-07-09 23:41:58 | INFO | Models loaded successfully.
+2026-07-10 13:19:12 | INFO | Successfully downloaded HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf to C:\tmp\ragnr\HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf
+2026-07-10 13:19:12 | INFO | Processing and caching: HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf
+2026-07-10 13:25:11 | INFO | Indexing 68 chunks to Qdrant with batch_size=4...
+2026-07-10 13:25:11 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 13:25:15 | INFO | Models loaded successfully.
+2026-07-10 13:40:58 | INFO | Successfully downloaded HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf to C:\tmp\ragnr\HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf
+2026-07-10 13:40:58 | INFO | Processing and caching: HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf
+2026-07-10 13:46:33 | INFO | Indexing 374 chunks to Qdrant with batch_size=4...
+2026-07-10 13:46:33 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 13:46:38 | INFO | Models loaded successfully.
+2026-07-10 15:29:31 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 15:29:36 | INFO | Models loaded successfully.
+2026-07-10 15:32:44 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 15:32:49 | INFO | Models loaded successfully.
+2026-07-10 15:34:11 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 15:34:14 | INFO | Saved verified answer to Semantic Cache.
+2026-07-10 15:35:52 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 15:35:53 | INFO | Saved verified answer to Semantic Cache.
+2026-07-10 15:37:30 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 15:37:31 | INFO | Saved verified answer to Semantic Cache.
+2026-07-10 15:38:26 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 15:38:27 | INFO | Saved verified answer to Semantic Cache.
+2026-07-10 16:10:27 | INFO | Creating Qdrant collection: semantic_cache
+2026-07-10 16:10:27 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 16:10:29 | INFO | Models loaded successfully.
+2026-07-10 16:10:30 | INFO | Semantic Cache collection created successfully.
+2026-07-10 16:28:01 | INFO | Successfully downloaded HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf to C:\tmp\ragnr\HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf
+2026-07-10 16:28:01 | INFO | Processing and caching: HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf
+2026-07-10 16:33:33 | INFO | Indexing 374 chunks to Qdrant with batch_size=4...
+2026-07-10 16:33:33 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 16:33:36 | INFO | Models loaded successfully.
+2026-07-10 16:37:33 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 16:37:37 | INFO | Models loaded successfully.
+2026-07-10 16:38:27 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 16:38:30 | INFO | Saved verified answer to Semantic Cache.
+2026-07-10 16:40:03 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 16:40:04 | INFO | Saved verified answer to Semantic Cache.
+2026-07-10 16:41:58 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 16:41:59 | INFO | Saved verified answer to Semantic Cache.
+2026-07-10 16:43:15 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 16:43:18 | INFO | Saved verified answer to Semantic Cache.
+2026-07-10 16:51:48 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 16:51:56 | INFO | Models loaded successfully.
+2026-07-10 16:53:10 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 16:53:16 | INFO | Saved verified answer to Semantic Cache.
+2026-07-10 16:54:07 | INFO | Exact Cache HIT!
+2026-07-10 16:55:27 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 16:55:28 | INFO | Saved verified answer to Semantic Cache.
+2026-07-10 16:56:38 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 16:56:41 | INFO | Saved verified answer to Semantic Cache.
+2026-07-10 16:57:47 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 16:57:49 | INFO | Saved verified answer to Semantic Cache.
+2026-07-10 16:59:27 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 16:59:29 | INFO | Saved verified answer to Semantic Cache.
+2026-07-10 16:59:52 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-10 16:59:53 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-10 17:00:47 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...
+2026-07-10 17:02:43 | INFO | Exact Cache HIT!
+2026-07-10 17:05:44 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 17:05:47 | INFO | Saved verified answer to Semantic Cache.
+2026-07-10 17:14:15 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 17:14:19 | INFO | Models loaded successfully.
+2026-07-10 17:15:57 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 17:16:05 | INFO | Saved verified answer to Semantic Cache.
+2026-07-10 17:24:10 | INFO | Creating Qdrant collection: semantic_cache
+2026-07-10 17:24:10 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 17:24:18 | INFO | Models loaded successfully.
+2026-07-10 17:24:18 | INFO | Semantic Cache collection created successfully.
+2026-07-10 17:35:57 | INFO | Creating Qdrant collection: semantic_cache
+2026-07-10 17:35:57 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 17:36:00 | INFO | Models loaded successfully.
+2026-07-10 17:39:32 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 17:39:36 | INFO | Models loaded successfully.
+2026-07-10 17:46:23 | INFO | Creating Qdrant collection: semantic_cache
+2026-07-10 17:46:23 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 17:46:28 | INFO | Models loaded successfully.
+2026-07-10 17:46:29 | INFO | Semantic Cache collection created successfully.
+2026-07-10 17:49:52 | INFO | Creating Qdrant collection: semantic_cache
+2026-07-10 17:49:52 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 17:49:58 | INFO | Models loaded successfully.
+2026-07-10 17:49:59 | INFO | Semantic Cache collection created successfully.
+2026-07-10 17:52:48 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 17:52:56 | INFO | Models loaded successfully.
+2026-07-10 17:54:05 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 17:54:05 | WARNING | Failed to set semantic cache: argument of type 'NoneType' is not iterable
+2026-07-10 18:23:04 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 18:23:07 | INFO | Models loaded successfully.
+2026-07-10 18:24:22 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 18:24:23 | WARNING | Failed to set semantic cache: argument of type 'NoneType' is not iterable
+2026-07-10 18:34:04 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 18:34:08 | INFO | Models loaded successfully.
+2026-07-10 18:53:16 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 18:53:22 | INFO | Models loaded successfully.
+2026-07-10 18:57:40 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 18:57:43 | INFO | Models loaded successfully.
+2026-07-10 18:58:17 | WARNING | Failed to set exact cache: Task <Task pending name='Task-2634' coro=<ExactCache.set_cache() running at D:\RagnrAI\cache\exact_cache.py:33> cb=[_run_until_complete_cb() at C:\Users\toqee_41ka4vz\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py:181]> got Future <Future pending> attached to a different loop
+2026-07-10 19:07:14 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 19:07:18 | INFO | Models loaded successfully.
+2026-07-10 19:08:35 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 19:08:35 | WARNING | Failed to set semantic cache: argument of type 'NoneType' is not iterable
+2026-07-10 19:14:08 | INFO | Loading FastEmbed models into System RAM...
+2026-07-10 19:14:11 | INFO | Models loaded successfully.
+2026-07-10 19:15:07 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 19:15:10 | WARNING | Failed to set semantic cache: argument of type 'NoneType' is not iterable
+2026-07-10 19:17:18 | INFO | Saved verified answer to Exact Cache.
+2026-07-10 19:17:18 | WARNING | Failed to set semantic cache: argument of type 'NoneType' is not iterable
+2026-07-12 23:39:39 | INFO | Loading FastEmbed models into System RAM...
+2026-07-12 23:39:42 | INFO | Models loaded successfully.
+2026-07-12 23:39:42 | WARNING | Failed to set semantic cache: argument of type 'NoneType' is not iterable
+2026-07-12 23:41:20 | INFO | Loading FastEmbed models into System RAM...
+2026-07-12 23:41:23 | INFO | Models loaded successfully.
+2026-07-12 23:41:23 | WARNING | Failed to set semantic cache: argument of type 'NoneType' is not iterable
+2026-07-12 23:41:54 | INFO | Loading FastEmbed models into System RAM...
+2026-07-12 23:41:57 | INFO | Models loaded successfully.
+2026-07-12 23:41:57 | ERROR | Failed to set semantic cache: argument of type 'NoneType' is not iterable
+Traceback (most recent call last):
+
+  File "D:\RagnrAI\scratch_test_cache.py", line 16, in <module>
+    test_cache()
+    └ <function test_cache at 0x00000242B455C0E0>
+
+  File "D:\RagnrAI\scratch_test_cache.py", line 5, in test_cache
+    semantic_cache_manager.set_cache(
+    │                      └ <function SemanticCache.set_cache at 0x00000242D20C14E0>
+    └ <cache.semantic_cache.SemanticCache object at 0x00000242D1FC1BE0>
+
+> File "D:\RagnrAI\cache\semantic_cache.py", line 63, in set_cache
+    self.client.add(
+    │    │      └ <function QdrantFastembedMixin.add at 0x00000242D1F659E0>
+    │    └ <qdrant_client.qdrant_client.QdrantClient object at 0x00000242D1EA9E80>
+    └ <cache.semantic_cache.SemanticCache object at 0x00000242D1FC1BE0>
+
+  File "C:\Users\toqee_41ka4vz\miniconda3\Lib\site-packages\qdrant_client\qdrant_fastembed.py", line 596, in add
+    self._validate_collection_info(collection_info)
+    │    │                         └ CollectionInfo(status=<CollectionStatus.GREEN: 'green'>, optimizer_status=<OptimizersStatusOneOf.OK: 'ok'>, warnings=None, in...
+    │    └ <function QdrantFastembedMixin._validate_collection_info at 0x00000242D1F65760>
+    └ <qdrant_client.qdrant_client.QdrantClient object at 0x00000242D1EA9E80>
+  File "C:\Users\toqee_41ka4vz\miniconda3\Lib\site-packages\qdrant_client\qdrant_fastembed.py", line 431, in _validate_collection_info
+    sparse_vector_field_name in collection_info.config.params.sparse_vectors
+    │                           │               │      │      └ None
+    │                           │               │      └ CollectionParams(vectors={'fast-bge-small-en-v1.5': VectorParams(size=384, distance=<Distance.COSINE: 'Cosine'>, hnsw_config=...
+    │                           │               └ CollectionConfig(params=CollectionParams(vectors={'fast-bge-small-en-v1.5': VectorParams(size=384, distance=<Distance.COSINE:...
+    │                           └ CollectionInfo(status=<CollectionStatus.GREEN: 'green'>, optimizer_status=<OptimizersStatusOneOf.OK: 'ok'>, warnings=None, in...
+    └ 'fast-sparse-splade_pp_en_v1'
+
+TypeError: argument of type 'NoneType' is not iterable
+2026-07-13 11:27:55 | INFO | Successfully downloaded HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf to C:\tmp\ragnr\HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf
+2026-07-13 11:27:55 | INFO | Processing and caching: HBL_Islamic_Terms_and_Conditions_Effective_Feb_2026_compressed.pdf
+2026-07-13 11:33:23 | INFO | Indexing 374 chunks to Qdrant with batch_size=4...
+2026-07-13 11:33:23 | INFO | Loading FastEmbed models into System RAM...
+2026-07-13 11:33:25 | INFO | Models loaded successfully.
+2026-07-13 11:39:22 | INFO | Loading FastEmbed models into System RAM...
+2026-07-13 11:39:25 | INFO | Models loaded successfully.
+2026-07-13 11:40:03 | INFO | Saved verified answer to Exact Cache.
+2026-07-13 11:40:03 | INFO | Saved verified answer to Semantic Cache.
+2026-07-13 11:42:06 | INFO | Saved verified answer to Exact Cache.
+2026-07-13 11:42:07 | INFO | Saved verified answer to Semantic Cache.
+2026-07-13 11:43:56 | INFO | Saved verified answer to Exact Cache.
+2026-07-13 11:43:56 | INFO | Saved verified answer to Semantic Cache.
+2026-07-13 11:46:19 | INFO | Saved verified answer to Exact Cache.
+2026-07-13 11:46:19 | INFO | Saved verified answer to Semantic Cache.
+2026-07-13 11:48:07 | INFO | Saved verified answer to Exact Cache.
+2026-07-13 11:48:08 | INFO | Saved verified answer to Semantic Cache.
+2026-07-13 12:12:34 | INFO | Loading FastEmbed models into System RAM...
+2026-07-13 12:12:41 | INFO | Models loaded successfully.
+2026-07-13 12:20:01 | INFO | Loading FastEmbed models into System RAM...
+2026-07-13 12:20:09 | INFO | Models loaded successfully.
+2026-07-13 12:20:12 | INFO | Saved verified answer to Semantic Cache.
+2026-07-13 12:23:26 | INFO | Loading FastEmbed models into System RAM...
+2026-07-13 12:23:31 | INFO | Models loaded successfully.
+2026-07-13 12:23:38 | INFO | Saved verified answer to Semantic Cache.
+2026-07-13 12:24:31 | INFO | Loading FastEmbed models into System RAM...
+2026-07-13 12:24:35 | INFO | Models loaded successfully.
+2026-07-13 12:24:40 | INFO | Saved verified answer to Semantic Cache.
+2026-07-13 14:06:12 | INFO | Successfully downloaded rag_research-arxiv_compressed.pdf to C:\tmp\ragnr\rag_research-arxiv_compressed.pdf
+2026-07-13 14:06:12 | INFO | Processing and caching: rag_research-arxiv_compressed.pdf
+2026-07-13 14:07:16 | INFO | Indexing 87 chunks to Qdrant with batch_size=4...

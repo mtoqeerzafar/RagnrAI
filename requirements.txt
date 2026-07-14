@@ -1,0 +1,83 @@
+# Core Python Utilities
+requests==2.32.3
+python-dotenv==1.0.1
+pydantic==2.10.6
+pydantic-settings==2.7.1
+
+# Logging
+loguru==0.7.3
+
+# Google Gemini API
+google-generativeai==0.8.3
+
+# LangChain Core (install in this order to avoid conflicts)
+langchain-core==0.3.32
+langchain==0.3.16
+langchain-community==0.3.16
+langchain-text-splitters==0.3.5
+langchain-google-genai==2.0.5
+langchain-openai==0.3.3
+
+# LangGraph for Multi-Agent Workflow
+langgraph==0.2.68
+langgraph-checkpoint==2.0.10
+
+# Gradio Web Interface
+gradio==5.9.1
+
+# Vector Database
+chromadb==0.6.3
+
+# BM25 & Reranking Retrieval
+rank-bm25==0.2.2
+flashrank==0.2.9
+
+# Document Processing
+pypdf==5.2.0
+python-docx==1.1.2
+
+# Optional: Docling for Advanced Document Parsing
+# Uncomment the lines below if you want to use Docling
+# Note: Docling requires PyTorch. Install PyTorch CPU version separately first:
+# pip install torch --index-url https://download.pytorch.org/whl/cpu
+# Then uncomment these lines:
+docling==2.15.0
+docling-core==2.16.0
+
+# Phase 1: Asynchronous Foundation
+fastapi>=0.115.2
+uvicorn==0.30.1
+celery==5.4.0
+redis==5.0.4
+boto3==1.34.110
+sqlalchemy==2.0.30
+
+
+# Phase 2: Vector Database
+qdrant-client
+fastembed
+
+# Phase 3: Enterprise Security & Guardrails
+presidio-analyzer
+presidio-anonymizer
+spacy
+detect-secrets
+
+# Phase 4: Observability & Evaluation
+arize-phoenix
+openinference-instrumentation-langchain
+
+# Phase 5: Rate Limiting
+fastapi-limiter
+
+# Phase 6: Groq Evaluation
+langchain-groq
+
+# Phase 10: Authentication
+PyJWT==2.8.0
+passlib[bcrypt]==1.7.4
+
+# Phase 10.2: LangGraph Memory
+langgraph-checkpoint-postgres
+psycopg-pool
+psycopg[binary]==3.2.2

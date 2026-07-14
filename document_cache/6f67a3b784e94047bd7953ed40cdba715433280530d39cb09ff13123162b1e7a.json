@@ -1,0 +1,1252 @@
+{
+  "timestamp": 1783933627.518467,
+  "chunks": [
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > PDF Retrieval Augmented Question Answering]\n\nThi Thu Uyen Hoang Meenakshi Rajendran Kun Zhang Yuhan Wu Viet Anh Nguyen Saarland University {thho00003, mera00002, kuzh00001, yuwu00001, ving00001}@stud.uni-saarland.de",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "PDF Retrieval Augmented Question Answering",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Abstract]\n\nThis paper presents an advancement in Question-Answering (QA) systems using a Retrieval Augmented Generation (RAG) framework to enhance information extraction from PDF files. Recognizing the richness and diversity of data within PDFs-including text, images, vector diagrams, graphs, and tables-poses unique challenges for existing QA systems primarily designed for textual content. We seek to develop a comprehensive RAG-based QA system that will effectively address complex multi-modal questions, where several data types are put together in the question. This is mainly achieved by refining approaches toward processing and integrating non-textual elements in PDFs into the RAG framework to derive precise and relevant answers, as well as finetuning large language models to adapt better into our system. We provide an in-depth experimental evaluation of our system, demonstrating its capabilities to extract accurate information that can be adapted to different types of content across PDFs. This work not only pushes the boundaries of retrieval-augmented QA systems but also lays a foundation for further research in multimodal data integration and processing.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "Abstract",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 1 Introduction]\n\nRecent progress in machine learning and natural language processing has remarkably improved interactions with digital documents leading to better information retrieval systems. The most important aspect is the Retrieval Augmented Generation (RAG) framework Lewis et al. [2020] for QA systems, which combines both retrieval and generation-based approaches for handling difficult questions. In our work, we enhance the existing RAG-based QA system for information extraction through text, images, vector diagrams/graphs, and tables provided in PDFs.\nRAG is designed to address the serious limitations of the large language models (LLMs) such as untruthfulness, false reasoning and hallucinations Bang et al. [2023]. RAG offers accurate and reliable solutions for generating contents and interacting with the users Sawarkar et al. [2024]. Retrieving information from PDF (Portable Document Format) has been drawing a huge attention in various academia and industries due to the data richness in PDF, from plain text, tables to high resolution images and intricate vector graphics, presenting an opportunity and a challenge at the same time. Traditional RAG-based QA systems focus primarily on text Lin [2024], Ma et al. [2023], Siriwardhana et al. [2023] while non-textual elements such as images, charts, tables and diagrams within PDFs are not thoroughly explored. Our objective is to address this gap by developing a comprehensive system capable of answering complex, multifaceted questions that necessitate the integration and interpretation of diverse data types.\nTo achieve this, we introduce an end-to-end system that retrieves and processes images, diagrams, graphs, and tables embedded within PDF documents, extending beyond the capabilities of conventional text-centric RAG models. We also implement preprocessing steps including the removal of headers and footers, conversion of PDFs to markdown for easier manipulation, image captioning and table reformatting to enhance data readability and retrieval accuracy. Finally, we fine-tune language models to be RAG-aware, ensuring a better understanding of our data format and document domain.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "1 Introduction",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 1 Introduction]\n\nIn the report, we discussed related work in 2, stated the objective of this project and implemention of preprocessing steps along with the model design in 3. We present our experiment in 4, results in 5 and conclude our report in 7.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "1 Introduction",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 2 Related Work]\n\nThe rapid advancement in multimodal QA stems from integrating RAG into multi-data modality frameworks. This section reviews relevant studies and developments, highlighting their contributions, methodologies and limitations of Integration of RAG with PDF Processing for QA.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "2 Related Work",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 2.1 Retrieval-Augmented Generation (RAG)]\n\nLarge language models (LLMs) have advanced AI but have limitations like hallucinations and inaccuracies. RAG improves text accuracy by leveraging retrieved documents. Corrective Retrieval Augmented Generation (CRAG) introduces evaluators to assess document quality and refine retrieval actions Yan et al. [2024]. Unlike RAG, RAG-end2end Siriwardhana et al. [2023] jointly trains retrievers and generators, enhancing open-domain question answering by updating all components, including external knowledge bases.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "2.1 Retrieval-Augmented Generation (RAG)",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 2.2 Question Answering (QA) with Language Models (LLMs)]\n\nXu et al. [2023] democratizes advanced chat models, enhancing Llama's dialogue performance through fine-tuning and Self-Distillation with Feedback (SDF) further improves its capabilities. Comparing RAG and fine-tuning with synthetic data, fine-tuning shows significant performance improvements Soudani et al. [2024]. ChatQA Liu et al. [2024] surpasses GPT-4 in retrieval-augmented generation and conversational QA. The Chain-of-Action (CoA) framework Pan et al. [2024] addresses complex questions by decomposing them into reasoning chains, effectively tackling hallucinations.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "2.2 Question Answering (QA) with Language Models (LLMs)",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 2.3 Multimodal Question Answering Systems]\n\nMultimodal QA systems integrate diverse data modalities like text, tables, and images, improving real-world application accuracy. MMLLMs architecture Zhang et al. [2024] and the tool-interacting divide-and-conquer strategy Rajabzadeh et al. [2023] enhance reasoning and accuracy.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "2.3 Multimodal Question Answering Systems",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 2.4 Integration of RAG with PDF Processing for QA]\n\nPDFTriage Saad-Falcon et al. [2023] bridges this gap by enabling models to retrieve context based on both structure and content, but is challenged by the metadata variability, document format limitations, scalability, computational requirements, and datasets scope. A case study in the agricultural domain Gupta et al. [2024] demonstrated the approach combining RAG and Fine-Tuning exhibited superior performance when dealing with geographically specific knowledge. However, it does not fully leverage all available data types. This limitation reduces their effectiveness in scenarios that require integrated data sources, such as combining text with images and captions.\nIn our approach, we make use of the existing RAG model to answer queries relevant to PDF documents and overcome the above limitations regarding metadata handling, format compatibility and integration of different data sources from previous works.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "2.4 Integration of RAG with PDF Processing for QA",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 3.1 Objective]\n\nA primary issue with RAG QA systems with PDFs is the automated extraction of elements like text, images and tables. Traditional text-based methods often fail to extract critical information resulting in less optimal performance Lin [2024]. We aim to address the challenge of accurately extracting and processing different data types such as text, images, tables and diagrams. Our project objective is to develop a comprehensive system capable of answering complex, multifaceted questions that necessitate the integration, retrieval and interpretation of diverse data types.\n2",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "3.1 Objective",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 3.2 System Design]\n\nFigure 1: PIER-QA: PDF Integrated Enhanced Retrieval Question Answering\nGiven a query q and a set of PDF documents { D ,D ,...,D 1 2 n } . The goal is to retrieve most accurate information from these documents and generate a precise answer a . We propose PDF Integrated Enhanced Retrieval Question Answering (PIER-QA) system consisting of three main components as shown in Figure 1.\nPDF Preprocessing. Headers and footers are removed using DBSCAN clustering algorithm Fahim [2022] which improves accuracy, ensuring documents are formatted for further processing. They are then converted to markdown through a machine-learning-based tool - Marker Paruchur [2023]. Marker is a lightweight and easy to read format that simplifies further processing steps. In markdown format, we generate captions for images and compress markdown tables into a dictionary format for efficient storage and retrieval.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "3.2 System Design",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 3.2 System Design]\n\nEmbedding and Storage. The preprocessed markdown document is segmented into chunks of 1000 characters each, embedded by GTE-large Li et al. [2023] and stored using ElasticSearch Kathare et al. [2020] for efficient retrieval. RAPTOR Sarthi et al. [2024] is used to enhance this process by indexing and clustering the chunks based on their semantics, improving the retrieval process.\nQuestion answering. Upon receiving a query from the user, ElasticEearch embeds the query, retrieves top-10 relevant chunks and uses the chunks as external knowledge to generate answers with our RAG-Aware LLM. If the LLM answer contains an image ID or a table, we recover the corresponding image and table format before displaying to the user.\n3",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "3.2 System Design",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 3.2.1 PDF Preprocessing]\n\nFigure 2: PDF Preprocessing",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "3.2.1 PDF Preprocessing",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Header and footer removal]\n\nThe removal of headers and footers is an important preprocessing step as they could interfere with the retrieval process by adding noise to the data which leads to less accurate results. Thus, by removing headers and footers, we obtain reliable cleaned pdf documents for further processing. We make an assumption that headers and footers coordinates are consistent across pages, i.e., at the top and bottom of the page, therefore by detecting this repeating pattern we will be able to remove headers and footers. As shown in Figure 2, we employ DBSCAN (Density-Based Spatial Clustering of Applications with Noise) which is well known for identifying areas of high density Fahim [2022]. We use DBSCAN to cluster the bounding box of PDF elements, then remove the most frequent clusters across pages (marked by red boxes) while keeping the rest (blue boxes). We also notice the pattern can slightly varies, especially on long documents, therefore we apply the algorithm on each 10 pages instead of the entire document at once. Let D i be a PDF document. We denote the preprocessed version of D i as ˆ D i , the preprocessing involves:\nDBSCAN D ( i ) → ˆ D i clean (1)\nThe implementation of DBSCAN clustering involves several key steps as shown in algorithm 1. Initially, the PDF parsing library extracts the bounding boxes of all elements on each page, including text blocks, images, drawings, and other graphical elements. These bounding boxes are then used as input for the DBSCAN algorithm, which clusters them based on their spatial proximity. More details of DBSCAN hyperparameters can be found in Appendix B.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "Header and footer removal",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > PDF to Markdown conversion]\n\nThis step employs Marker (Venkatramana, 2023), a software utility tool designed for identifying and extracting various types of content from pdf documents helps in extracting and saving images along with markdown text and utilizes models wherever necessary to enhance speed and accuracy. We convert the cleaned document to markdown format including text T , image I , and tables τ :\nMarkerD ˆ i clean → ˆ D i markdown = ( T, I, τ ) (2)\n4",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "PDF to Markdown conversion",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\n1 Initialize DBSCAN parameters:",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "list",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 5
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\n2 minPts: minimum number of points to form a dense region",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "list",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 5
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\n3 eps: maximum distance between two points to be considered neighbors",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "list",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 5
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\n4 Load PDF document",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "list",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 5
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\n5 Extract text elements with spatial coordinates (x, y);",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "list",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 5
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\n6 Cluster text elements using DBSCAN:",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "list",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 5
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\n7 clusters = DBSCAN(text_elements, eps, minPts)",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "list",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 5
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\n8 for each cluster in clusters: do",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "list",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 5
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\n9 Calculate cluster centroid",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "list",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 5
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\n10\n11\n12",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\n13\n14\n15",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\n16\n17\n18",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\nif\ncentroid is near the top or bottom of the page:\nthen",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\nMark cluster as header or footer\nelse\nMark cluster as main content",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\nend\nend\nfor each page in PDF: do",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\nRemove text elements marked as header or footer\nend",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\nRemove text elements marked as header or footer\nend\n\n19 Save the modified PDF document",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "list",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 5
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Algorithm 1: Header/Footer Removal Algorithm]\n\nIn image extraction, Marker detects images, diagrams, graphs and optimizes them, resulting in smaller files which facilitates the extraction of images from PDFs for subsequent steps by generating a markdown file including image file name and URLs. The full configurations for Marker are described in Appendix C.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "Algorithm 1: Header/Footer Removal Algorithm",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Image and Table Processing]\n\nOne key improvement is generating captions to the images which alleviates image modality and turns the input into LLM's native domain: text. This enhances the readability of markdown and improves the accuracy of the QA system by providing additional text information which can be indexed and retrieved. The image captioning in our project utilizes the LLaVA (Large Language and Vision Assistant) model, which is a fine-tuned version of the LLaMA/Vicuna model Liu et al. [2023b,a]. Every image in the markdown is given a unique ID (e.g.: image_1.png) and the generated captions include these references, ensuring that images are identified and described. During markdown conversion, tables are represented in markdown syntax initially which can be verbose and inefficient. To enhance this, we compress markdown tables as dictionary format for efficient storage, reducing the storage space leading to easier data access, understanding and manipulation.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "Image and Table Processing",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 3.2.2 Embedding and storage]\n\nThe first step involves breaking down the processed document ˆ D i markdown into smaller chunks { c 1 , c 2 , ...c m } . Data consisting of text, image captions and dictionary-formatted tables into separate segments. Each chunk C j is embedded into a high-dimensional vector space using an embedding model f embed :\nf embed ( c j ) → v j ∈ R d (3)\nThese embeddings are then stored in a searchable database (Elasticsearch):",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "3.2.2 Embedding and storage",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 3.2.2 Embedding and storage]\n\nElasticsearch ( v 1 , v 2 , ... v m ) (4)\nTo enhance the retrieval process, we employ Recursive Abstractive Processing for Tree-Organized Retrieval (RAPTOR) for semantic indexing. It creates a tree structured index based on semantic content of the chunks for precise retrieval.\n5",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "3.2.2 Embedding and storage",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > RAG-Aware LLM Finetuning]\n\nTo make the LLM adapt to the document domain as well as being aware of our Markdown format, image, and table structure, we trained RAG-Llama3-70B using a systematic process. We applied the same preprocessing steps of our system for training PDF documents, and then split the text into chunks of 5000 characters each. Using GPT-4, we generated relevant and comprehensive questions for each context chunk. These questions, along with their respective context, were fed back into GPT-4 to generate detailed answers, resulting to approximately 2000 question-answer pairs. To reflect the inference scenario where 10 chunks of 1000 characters were retrieved and appended to the prompt, we split the original context into five 1000-character chunks, mixed randomly with additional five 1000-character chunks from other documents, and appended as context to the question. The prompt details can be found in Appendix A. This also helps enhance robustness of the model on assessing relevance of the retrieved context. We finetune Llama3-70B-Instruct Grattafiori et al. [2024] with Low-Rank Adaptation (LoRA) Hu et al. [2021] over 2 epochs, batch size of 8 and learning rate of 0.00008. All training hyperparameters can be found in Appendix D. The training took 8 hours on a single A100 80GB.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "RAG-Aware LLM Finetuning",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Query Processing and Retrieval]\n\nUpon receiving a query q , the query is also embedded into the same high-dimensional vector space:\nf embed ( q ) → v q ∈ R d (5)\nThe system performs a similarity search to retrieve the top-k relevant chunks c j 1 , c j 2 , ...c jk based on their cosine similarity to v q",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "Query Processing and Retrieval",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Query Processing and Retrieval]\n\nRetrieve ( v q , { v 1 , v 2 , ... v m } ) →{ c j 1 , c j 2 , ...c jk } (6)",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "Query Processing and Retrieval",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > Prompt Injection and Answer Generation]\n\nThe retrieved chunks are appended to the query in the prompt. The LLM then processes the prompt which now includes the user query and the injected chunks, to generate a response. The retrieved chunks { c j 1 , c j 2 , ...c jk } are used as context to generate an answer a using an LLM. The LLM is prompted with the query q and the retrieved chunks:\nLLM q, ( { c j 1 , c j 2 , ...c jk } ) → a (7)\nWe prompt the model to include the image ID related to the answer from the retrieved context in a specific format, i.e., [image_1.png] for the later image recovery process. If the LLM answer contains image reference IDs, we retrieve the corresponding image from the database and display it to the user. In addition to handling images, if the LLM's output includes dictionary-formatted tables, we extract and convert them back to markdown format for user display.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "Prompt Injection and Answer Generation",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 4.1 Data Collection]\n\nOur dataset consists of 8 private internal documents from a production company. We used 6 of them for finetuning our model as described in Section 3, leaving the rest for testing. From the test documents, we constructed a test set by manually prompting GPT-4o to generate questions and answers based on some specific contexts, resulting in 100 question-answer pairs. The question covers a wide range of topics and formats involving text, images, tables to assess the system's performance effectively.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "4.1 Data Collection",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 4.2 Metrics]\n\nWe employed several metrics to measure the effectiveness of our system. Similarity between the generated answers and the gold standard answers was assessed using embeddings from the GTE-large\n6\nmodel. Additionally, we used accuracy at different thresholds accuracy@0.85 , accuracy@0.9 and accuracy@0.95 to evaluate the precision of the system. An answer is considered correct if its similarity score exceeds the given threshold score. These metrics provide a nuanced view of the system's performance.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "4.2 Metrics",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 5.1 Comparison with Baseline]\n\nTo benchmark our system, we compared it with a baseline system that employs a similar approach. The baseline system parses the PDF files into plain text and saves these text chunks into a database. The retrieval process involves fetching these chunks and including them in the LLM prompt using either GPT-3.5-turbo or GPT-4o. Unlike our system, the baseline does not incorporate preprocessing steps such as header/footer removal or markdown conversion, nor does it retrieve images, diagrams and tables. Both systems were evaluated using the same set of 100 test questions. We measured the performance using the similarity metric and the accuracy at different thresholds (accuracy@0.85, accuracy@0.9 and accuracy@0.95).\nTable 1: Scores comparison with Baseline",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "5.1 Comparison with Baseline",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 5.1 Comparison with Baseline]\n\nTo benchmark our system, we compared it with a baseline system that employs a similar approach. The baseline system parses the PDF files into plain text and saves these text chunks into a database. The retrieval process involves fetching these chunks and including them in the LLM prompt using either GPT-3.5-turbo or GPT-4o. Unlike our system, the baseline does not incorporate preprocessing steps such as header/footer removal or markdown conversion, nor does it retrieve images, diagrams and tables. Both systems were evaluated using the same set of 100 test questions. We measured the performance using the similarity metric and the accuracy at different thresholds (accuracy@0.85, accuracy@0.9 and accuracy@0.95).\nTable 1: Scores comparison with Baseline\n\n| System   | LLMAgent      |   Similarity |   Accuracy @0.85 |   Accuracy @0.9 |   Accuracy @0.95 |\n|----------|---------------|--------------|------------------|-----------------|------------------|\n| Baseline | GPT-3.5-turbo |       0.8639 |           0.5889 |          0.3667 |           0.06   |\n| Baseline | GPT-4o        |       0.8647 |           0.6444 |          0.4    |           0.1111 |\n| PIER-QA  | GPT-3.5-turbo |       0.8666 |           0.764  |          0.3708 |           0.1124 |\n| PIER-QA  | GPT-4o        |       0.8837 |           0.7191 |          0.4944 |           0.191  |",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "table",
+        "hierarchy": {
+          "h1": "5.1 Comparison with Baseline",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 7
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 5.1 Comparison with Baseline]\n\nThe results in Table 1 demonstrate a clear performance advantage of the PIER-QA system over the baseline. Notably, PIER-QA achieved higher similarity scores and accuracy across all thresholds (0.85, 0.9, and 0.95) with both GPT-3.5-turbo and GPT-4o agents. This improvement is attributed to the enhanced preprocessing steps, including header/footer removal and markdown conversion, as well as the effective retrieval and integration of images, diagrams, and tables. These advancements enabled PIER-QA to generate more accurate and relevant responses, particularly at higher accuracy thresholds, highlighting its capability to handle complex PDF-based questions comprehensively.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "5.1 Comparison with Baseline",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 5.2 Investigation of different LLM agents]\n\nTo understand the impact of different language models on our system's performance, we evaluated the system using three different LLM agents: GPT-4o, GPT-3.5-turbo and Llama3-70B-Instruct, and our RAG-Llama3-70B. Each LLM agent was integrated into our system and the same set of 100 questions are used for evaluation. It's also worth noting that the Llama3-70B-Instruct and our RAG-Llama3-70B were quantized at 4-bit precision for efficiency.\nTable 2: Scores comparison of different LLM agents. Best scores are highlighted in bold while second best scores are underlined.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "5.2 Investigation of different LLM agents",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 5.2 Investigation of different LLM agents]\n\nTo understand the impact of different language models on our system's performance, we evaluated the system using three different LLM agents: GPT-4o, GPT-3.5-turbo and Llama3-70B-Instruct, and our RAG-Llama3-70B. Each LLM agent was integrated into our system and the same set of 100 questions are used for evaluation. It's also worth noting that the Llama3-70B-Instruct and our RAG-Llama3-70B were quantized at 4-bit precision for efficiency.\nTable 2: Scores comparison of different LLM agents. Best scores are highlighted in bold while second best scores are underlined.\n\n| LLMAgent            |   Similarity |   Accuracy @0.85 |   Accuracy @0.9 |   Accuracy @0.95 |\n|---------------------|--------------|------------------|-----------------|------------------|\n| GPT-3.5-turbo       |       0.8666 |           0.764  |          0.3708 |           0.1124 |\n| GPT-4o              |       0.8837 |           0.7191 |          0.4944 |           0.191  |\n| Llama3-70B-Instruct |       0.8156 |           0.528  |          0.2921 |           0.1348 |\n| RAG-Llama3-70B      |       0.8771 |           0.7303 |          0.4719 |           0.2135 |",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "table",
+        "hierarchy": {
+          "h1": "5.2 Investigation of different LLM agents",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 7
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 5.2 Investigation of different LLM agents]\n\nIn Table 2, GPT-4o achieved the highest similarity score of 0.8837 and the best accuracy at 0.9, highlighting its strong retrieval and question-answering capabilities. However, our RAG-Llama3-70B\n7\nmodel demonstrated notable performance as well. It outperformed the other models in terms of accuracy at the highest threshold - 0.9, and achieved the second-best scores on the other metrics, closely trailing GPT-4o even at 4-bit precision. This underscores the effectiveness of our RAGAware finetuning in adapting the model into the document domain and our system structure.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "5.2 Investigation of different LLM agents",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 5.3 Table/Image Retrieval Performance]\n\nGiven the importance of accurately retrieving and presenting nontextual information, we conducted experiments specifically focused on the performance of image and table retrieval. For this, we assessed the capability of the system to correctly identify and include tables and images in the generated answers.\nWe created 50 questions from the two test documents asking about specific images, and another 50 questions asking about specific tables. Image and table accuracy were measured by detecting whether the output of the system contains the correct image ID and table ID, respectively. We used our finetuned RAG-Llama3-70B model as the LLM agent in this experiment.\nIn Table 3, our PIER-QA system achieved considerable accuracies for image and table retrieval, at 65.66% and 48.38%, respectively. The results demonstrate the reliability of our approach in handling complex document structures with not only text but also tables and images without the use of multimodal LLMs.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "5.3 Table/Image Retrieval Performance",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 5.3 Table/Image Retrieval Performance]\n\nTable 3: Table/Image Retrieval Performance",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "5.3 Table/Image Retrieval Performance",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 5.3 Table/Image Retrieval Performance]\n\nTable 3: Table/Image Retrieval Performance\n\n| Task            |   Accuracy |\n|-----------------|------------|\n| Image retrieval |     0.6566 |\n| Table retrieval |     0.4838 |",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "table",
+        "hierarchy": {
+          "h1": "5.3 Table/Image Retrieval Performance",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 8
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 6 Limitations]\n\nDBSCAN clustering algorithm might not always differentiate headers, footers and the main content, especially in highly variable PDF document formats. This misidentification could lead to loss of essential information in the further processing. The Markdown's tools performance in the conversion of complex PDF structures might not always be perfect, especially for complex tables, which leads to format errors or information loss. Additionally, our system always retrieve for every query, leading to potentially unnecessary retrieval steps and latency overhead. Research work shall be incorporated in the future to overcome the mentioned limitations with advanced tools and technologies.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "6 Limitations",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > 7 Conclusion]\n\nIn conclusion, our work significantly extends the powers of RAG frameworks by dealing with different data modalities in PDFs, such as text, images, vector diagrams, graphs, and tables. We have shown that our enriched RAG-based QA system could handle complex, multifaceted queries at higher accuracies and relevancies in incorporating and handling non-textual data. We further improved the system by finetuning the open-source LLM, closing the gap with the state-of-the-art close-source GPT-4o. Finally, we discussed some limitations of our system, which is a basis for future improvements.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "7 Conclusion",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > References]\n\nYejin Bang, Samuel Cahyawijaya, Nayeon Lee, Wenliang Dai, Dan Su, Bryan Wilie, Holy Lovenia, Ziwei Ji, Tiezheng Yu, Willy Chung, et al. A multitask, multilingual, multimodal evaluation of chatgpt on reasoning, hallucination, and interactivity. arXiv preprint arXiv:2302.04023 , 2023.\nAhmed Fahim. An extended dbscan clustering algorithm. vol , 13:245-258, 2022.\nAaron Grattafiori, Abhimanyu Dubey, Abhinav Jauhri, Abhinav Pandey, Abhishek Kadian, Ahmad Al-Dahle, Aiesha Letman, Akhil Mathur, Alan Schelten, Alex Vaughan, Amy Yang, Angela Fan,",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "References",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > References]\n\n8\nAnirudh Goyal, Anthony Hartshorn, Aobo Yang, Archi Mitra, Archie Sravankumar, Artem Korenev, Arthur Hinsvark, Arun Rao, Aston Zhang, Aurelien Rodriguez, Austen Gregerson, Ava Spataru, Baptiste Roziere, Bethany Biron, Binh Tang, Bobbie Chern, Charlotte Caucheteux, Chaya Nayak, Chloe Bi, Chris Marra, Chris McConnell, Christian Keller, Christophe Touret, Chunyang Wu, Corinne Wong, Cristian Canton Ferrer, Cyrus Nikolaidis, Damien Allonsius, Daniel Song, Danielle Pintz, Danny Livshits, Danny Wyatt, David Esiobu, Dhruv Choudhary, Dhruv Mahajan, Diego Garcia-Olano, Diego Perino, Dieuwke Hupkes, Egor Lakomkin, Ehab AlBadawy, Elina Lobanova, Emily Dinan, Eric Michael Smith, Filip Radenovic, Francisco Guzmán, Frank Zhang, Gabriel Synnaeve, Gabrielle Lee, Georgia Lewis Anderson, Govind Thattai, Graeme Nail, Gregoire Mialon, Guan Pang, Guillem Cucurell, Hailey Nguyen, Hannah Korevaar, Hu Xu, Hugo Touvron, Iliyan Zarov, Imanol Arrieta Ibarra, Isabel Kloumann, Ishan Misra, Ivan Evtimov, Jack Zhang, Jade Copet, Jaewon Lee, Jan Geffert, Jana Vranes, Jason Park, Jay Mahadeokar, Jeet Shah, Jelmer van der Linde, Jennifer Billock, Jenny Hong, Jenya Lee, Jeremy Fu, Jianfeng Chi, Jianyu Huang, Jiawen Liu, Jie Wang, Jiecao Yu, Joanna Bitton, Joe Spisak, Jongsoo Park, Joseph Rocca, Joshua Johnstun, Joshua Saxe, Junteng Jia, Kalyan Vasuden Alwala, Karthik Prasad, Kartikeya Upasani, Kate Plawiak, Ke Li, Kenneth Heafield, Kevin Stone, Khalid El-Arini, Krithika Iyer, Kshitiz Malik, Kuenley Chiu, Kunal Bhalla, Kushal Lakhotia, Lauren Rantala-Yeary, Laurens van der Maaten, Lawrence Chen, Liang Tan, Liz Jenkins, Louis Martin, Lovish Madaan, Lubo Malo, Lukas Blecher, Lukas Landzaat, Luke de Oliveira, Madeline Muzzi, Mahesh Pasupuleti, Mannat Singh, Manohar Paluri, Marcin Kardas, Maria Tsimpoukelli, Mathew Oldham, Mathieu Rita, Maya Pavlova, Melanie Kambadur, Mike Lewis, Min Si, Mitesh Kumar Singh, Mona Hassan, Naman Goyal, Narjes Torabi, Nikolay Bashlykov, Nikolay Bogoychev, Niladri Chatterji, Ning Zhang, Olivier Duchenne, Onur Çelebi, Patrick Alrassy, Pengchuan Zhang, Pengwei Li, Petar Vasic, Peter Weng, Prajjwal Bhargava, Pratik Dubal, Praveen Krishnan, Punit Singh Koura, Puxin Xu, Qing He, Qingxiao Dong, Ragavan Srinivasan, Raj Ganapathy, Ramon Calderer, Ricardo Silveira Cabral, Robert Stojnic, Roberta Raileanu, Rohan Maheswari, Rohit Girdhar, Rohit Patel, Romain Sauvestre, Ronnie Polidoro, Roshan Sumbaly, Ross Taylor, Ruan Silva, Rui Hou, Rui Wang, Saghar Hosseini, Sahana Chennabasappa, Sanjay Singh, Sean Bell, Seohyun Sonia Kim, Sergey Edunov, Shaoliang Nie, Sharan Narang, Sharath Raparthy, Sheng Shen, Shengye Wan, Shruti Bhosale, Shun Zhang, Simon Vandenhende, Soumya Batra, Spencer Whitman, Sten Sootla, Stephane Collot, Suchin Gururangan, Sydney Borodinsky, Tamar Herman, Tara Fowler, Tarek Sheasha, Thomas Georgiou, Thomas Scialom, Tobias Speckbacher, Todor Mihaylov, Tong Xiao, Ujjwal Karn, Vedanuj Goswami, Vibhor Gupta, Vignesh Ramanathan, Viktor Kerkez, Vincent Gonguet, Virginie Do, Vish Vogeti, Vítor Albiero, Vladan Petrovic, Weiwei Chu, Wenhan Xiong, Wenyin Fu, Whitney Meers, Xavier Martinet, Xiaodong Wang, Xiaofang Wang, Xiaoqing Ellen Tan, Xide Xia, Xinfeng Xie, Xuchao Jia, Xuewei Wang, Yaelle Goldschlag, Yashesh Gaur, Yasmine Babaei, Yi Wen, Yiwen Song, Yuchen Zhang, Yue Li, Yuning Mao, Zacharie Delpierre Coudert, Zheng Yan, Zhengxing Chen, Zoe Papakipos, Aaditya Singh, Aayushi Srivastava, Abha Jain, Adam Kelsey, Adam Shajnfeld, Adithya Gangidi, Adolfo Victoria, Ahuva Goldstand, Ajay Menon, Ajay Sharma, Alex Boesenberg, Alexei Baevski, Allie Feinstein, Amanda Kallet, Amit Sangani, Amos Teo, Anam Yunus, Andrei Lupu, Andres Alvarado, Andrew Caples, Andrew Gu, Andrew Ho, Andrew Poulton, Andrew Ryan, Ankit Ramchandani, Annie Dong, Annie Franco, Anuj Goyal, Aparajita Saraf, Arkabandhu Chowdhury, Ashley Gabriel, Ashwin Bharambe, Assaf Eisenman, Azadeh Yazdan, Beau James, Ben Maurer, Benjamin Leonhardi, Bernie Huang, Beth Loyd, Beto De Paola, Bhargavi Paranjape, Bing Liu, Bo Wu, Boyu Ni, Braden Hancock, Bram Wasti, Brandon Spence, Brani Stojkovic, Brian Gamido, Britt Montalvo, Carl Parker, Carly Burton, Catalina Mejia, Ce Liu, Changhan Wang, Changkyu Kim, Chao Zhou, Chester Hu, Ching-Hsiang Chu, Chris Cai, Chris Tindal, Christoph Feichtenhofer, Cynthia Gao, Damon Civin, Dana Beaty, Daniel Kreymer, Daniel Li, David Adkins, David Xu, Davide Testuggine, Delia David, Devi Parikh, Diana Liskovich, Didem Foss, Dingkang Wang, Duc Le, Dustin Holland, Edward Dowling, Eissa Jamil, Elaine Montgomery, Eleonora Presani, Emily Hahn, Emily Wood, Eric-Tuan Le, Erik Brinkman, Esteban Arcaute, Evan Dunbar, Evan Smothers, Fei Sun, Felix Kreuk, Feng Tian, Filippos Kokkinos, Firat Ozgenel, Francesco Caggioni, Frank Kanayet, Frank Seide, Gabriela Medina Florez, Gabriella Schwarz, Gada Badeer, Georgia Swee, Gil Halpern, Grant Herman, Grigory Sizov, Guangyi, Zhang, Guna Lakshminarayanan, Hakan Inan, Hamid Shojanazeri, Han Zou, Hannah Wang, Hanwen Zha, Haroun Habeeb, Harrison Rudolph, Helen Suk, Henry Aspegren, Hunter Goldman, Hongyuan Zhan, Ibrahim Damlaj, Igor Molybog, Igor Tufanov, Ilias Leontiadis, Irina-Elena Veliche, Itai Gat, Jake Weissman, James Geboski, James Kohli, Janice Lam, Japhet Asher, Jean-Baptiste Gaya, Jeff Marcus, Jeff Tang, Jennifer Chan, Jenny Zhen, Jeremy Reizenstein, Jeremy Teboul, Jessica Zhong, Jian Jin, Jingyi Yang, Joe Cummings,\n9",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "References",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > References]\n\nJon Carvill, Jon Shepard, Jonathan McPhie, Jonathan Torres, Josh Ginsburg, Junjie Wang, Kai Wu, Kam Hou U, Karan Saxena, Kartikay Khandelwal, Katayoun Zand, Kathy Matosich, Kaushik Veeraraghavan, Kelly Michelena, Keqian Li, Kiran Jagadeesh, Kun Huang, Kunal Chawla, Kyle Huang, Lailin Chen, Lakshya Garg, Lavender A, Leandro Silva, Lee Bell, Lei Zhang, Liangpeng Guo, Licheng Yu, Liron Moshkovich, Luca Wehrstedt, Madian Khabsa, Manav Avalani, Manish Bhatt, Martynas Mankus, Matan Hasson, Matthew Lennie, Matthias Reso, Maxim Groshev, Maxim Naumov, Maya Lathi, Meghan Keneally, Miao Liu, Michael L. Seltzer, Michal Valko, Michelle Restrepo, Mihir Patel, Mik Vyatskov, Mikayel Samvelyan, Mike Clark, Mike Macey, Mike Wang, Miquel Jubert Hermoso, Mo Metanat, Mohammad Rastegari, Munish Bansal, Nandhini Santhanam, Natascha Parks, Natasha White, Navyata Bawa, Nayan Singhal, Nick Egebo, Nicolas Usunier, Nikhil Mehta, Nikolay Pavlovich Laptev, Ning Dong, Norman Cheng, Oleg Chernoguz, Olivia Hart, Omkar Salpekar, Ozlem Kalinli, Parkin Kent, Parth Parekh, Paul Saab, Pavan Balaji, Pedro Rittner, Philip Bontrager, Pierre Roux, Piotr Dollar, Polina Zvyagina, Prashant Ratanchandani, Pritish Yuvraj, Qian Liang, Rachad Alao, Rachel Rodriguez, Rafi Ayub, Raghotham Murthy, Raghu Nayani, Rahul Mitra, Rangaprabhu Parthasarathy, Raymond Li, Rebekkah Hogan, Robin Battey, Rocky Wang, Russ Howes, Ruty Rinott, Sachin Mehta, Sachin Siby, Sai Jayesh Bondu, Samyak Datta, Sara Chugh, Sara Hunt, Sargun Dhillon, Sasha Sidorov, Satadru Pan, Saurabh Mahajan, Saurabh Verma, Seiji Yamamoto, Sharadh Ramaswamy, Shaun Lindsay, Shaun Lindsay, Sheng Feng, Shenghao Lin, Shengxin Cindy Zha, Shishir Patil, Shiva Shankar, Shuqiang Zhang, Shuqiang Zhang, Sinong Wang, Sneha Agarwal, Soji Sajuyigbe, Soumith Chintala, Stephanie Max, Stephen Chen, Steve Kehoe, Steve Satterfield, Sudarshan Govindaprasad, Sumit Gupta, Summer Deng, Sungmin Cho, Sunny Virk, Suraj Subramanian, Sy Choudhury, Sydney Goldman, Tal Remez, Tamar Glaser, Tamara Best, Thilo Koehler, Thomas Robinson, Tianhe Li, Tianjun Zhang, Tim Matthews, Timothy Chou, Tzook Shaked, Varun Vontimitta, Victoria Ajayi, Victoria Montanez, Vijai Mohan, Vinay Satish Kumar, Vishal Mangla, Vlad Ionescu, Vlad Poenaru, Vlad Tiberiu Mihailescu, Vladimir Ivanov, Wei Li, Wenchen Wang, Wenwen Jiang, Wes Bouaziz, Will Constable, Xiaocheng Tang, Xiaojian Wu, Xiaolan Wang, Xilun Wu, Xinbo Gao, Yaniv Kleinman, Yanjun Chen, Ye Hu, Ye Jia, Ye Qi, Yenda Li, Yilin Zhang, Ying Zhang, Yossi Adi, Youngjin Nam, Yu, Wang, Yu Zhao, Yuchen Hao, Yundi Qian, Yunlu Li, Yuzi He, Zach Rait, Zachary DeVito, Zef Rosnbrick, Zhaoduo Wen, Zhenyu Yang, Zhiwei Zhao, and Zhiyu Ma. The llama 3 herd of models, 2024. URL https://arxiv.org/abs/2407.21783 .\nAman Gupta, Anup Shirgaonkar, Angels de Luis Balaguer, Bruno Silva, Daniel Holstein, Dawei Li, Jennifer Marsman, Leonardo O Nunes, Mahsa Rouzbahman, Morris Sharp, et al. Rag vs fine-tuning: Pipelines, tradeoffs, and a case study on agriculture. arXiv preprint arXiv:2401.08406 , 2024.\nEdward J Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. Lora: Low-rank adaptation of large language models. arXiv preprint arXiv:2106.09685 , 2021.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "References",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > References]\n\nNikita Kathare, O Vinati Reddy, and Vishalakshi Prabhu. A comprehensive study of elasticsearch. International Journal of Science and Research (IJSR) , 2020.\nPatrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, et al. Retrieval-augmented generation for knowledge-intensive nlp tasks. Advances in Neural Information Processing Systems , 33:9459-9474, 2020.\nZehan Li, Xin Zhang, Yanzhao Zhang, Dingkun Long, Pengjun Xie, and Meishan Zhang. Towards general text embeddings with multi-stage contrastive learning. arXiv preprint arXiv:2308.03281 , 2023.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "References",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > References]\n\nDemiao Lin. Revolutionizing retrieval-augmented generation with enhanced pdf structure recognition. arXiv preprint arXiv:2401.12599 , 2024.\nHaotian Liu, Chunyuan Li, Yuheng Li, and Yong Jae Lee. Improved baselines with visual instruction tuning, 2023a.\nHaotian Liu, Chunyuan Li, Qingyang Wu, and Yong Jae Lee. Visual instruction tuning. In NeurIPS , 2023b.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "References",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > References]\n\n10\nZihan Liu, Wei Ping, Rajarshi Roy, Peng Xu, Mohammad Shoeybi, and Bryan Catanzaro. Chatqa: Building gpt-4 level conversational qa models. arXiv preprint arXiv:2401.10225 , 2024.\nXinbei Ma, Yeyun Gong, Pengcheng He, Hai Zhao, and Nan Duan. Query rewriting for retrieval-augmented large language models. arXiv preprint arXiv:2305.14283 , 2023.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "References",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > References]\n\nZhenyu Pan, Haozheng Luo, Manling Li, and Han Liu. Chain-of-action: Faithful and multimodal question answering through large language models. arXiv preprint arXiv:2403.17359 , 2024.\nVikas Paruchur. Inside marker: A guided source code tour for an ai-powered pdf layout detection engine, 2023. URL https://journal.hexmos.com/marker-pdf-document-ai/ . Last visited December 10,2023.\nHossein Rajabzadeh, Suyuchen Wang, Hyock Ju Kwon, and Bang Liu. Multimodal multi-hop question answering through a conversation between tools and efficiently finetuned large language models. arXiv preprint arXiv:2309.08922 , 2023.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "References",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > References]\n\nJon Saad-Falcon, Joe Barrow, Alexa Siu, Ani Nenkova, Ryan A Rossi, and Franck Dernoncourt. Pdftriage: question answering over long, structured documents. arXiv preprint arXiv:2309.08872 , 2023.\nParth Sarthi, Salman Abdullah, Aditi Tuli, Shubh Khanna, Anna Goldie, and Christopher D Manning. Raptor: Recursive abstractive processing for tree-organized retrieval. arXiv preprint arXiv:2401.18059 , 2024.\nKunal Sawarkar, Abhilasha Mangal, and Shivam Raj Solanki. Blended rag: Improving rag (retriever-augmented generation) accuracy with semantic search and hybrid query-based retrievers. arXiv preprint arXiv:2404.07220 , 2024.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "References",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > References]\n\nShamane Siriwardhana, Rivindu Weerasekera, Elliott Wen, Tharindu Kaluarachchi, Rajib Rana, and Suranga Nanayakkara. Improving the domain adaptation of retrieval augmented generation (rag) models for open domain question answering. Transactions of the Association for Computational Linguistics , 11:1-17, 2023.\nHeydar Soudani, Evangelos Kanoulas, and Faegheh Hasibi. Fine tuning vs. retrieval augmented generation for less popular knowledge. arXiv preprint arXiv:2403.01432 , 2024.\nCanwen Xu, Daya Guo, Nan Duan, and Julian McAuley. Baize: An open-source chat model with parameter-efficient tuning on self-chat data. arXiv preprint arXiv:2304.01196 , 2023.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "References",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > References]\n\nShi-Qi Yan, Jia-Chen Gu, Yun Zhu, and Zhen-Hua Ling. Corrective retrieval augmented generation. arXiv preprint arXiv:2401.15884 , 2024.\nDuzhen Zhang, Yahan Yu, Chenxing Li, Jiahua Dong, Dan Su, Chenhui Chu, and Dong Yu. Mm-llms: Recent advances in multimodal large language models. arXiv preprint arXiv:2401.13601 , 2024.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "References",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > A Training data generation prompts]\n\nThe data generation consists of two steps: question generation and answer generation. We split the preprocessed training documents into chunks (note that these chunks are longer than the retrieved chunks during inference) and put them into the 'context' slot of the question generation prompt as shown in Figure 3.\nFigure 3: Question generation prompt\n11",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "A Training data generation prompts",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > A Training data generation prompts]\n\nIn the next step, we put generated questions and their corresponding context into answer generation template (Figure 4), resulting to question-answer pairs for the given context. The instruction in this template is also used for training and inference.\nFigure 4: Answer generation prompt",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "A Training data generation prompts",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > B DBSCAN hyperparameter details]\n\nDBSCAN hyperparameter values were selected based on empirical analysis to balance the precision and recall of header/footer removal.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "B DBSCAN hyperparameter details",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > B DBSCAN hyperparameter details]\n\nDBSCAN hyperparameter values were selected based on empirical analysis to balance the precision and recall of header/footer removal.\n\n· min samples _ : This parameter represents the minimum number of samples in a neighborhood for a point to be considered as a core point. The value is dynamically set based on the number of pages in the PDF document:",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "list",
+        "hierarchy": {
+          "h1": "B DBSCAN hyperparameter details",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 12
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > B DBSCAN hyperparameter details]\n\nDBSCAN hyperparameter values were selected based on empirical analysis to balance the precision and recall of header/footer removal.\n\n-For documents with 6 pages or fewer: min samples _ = 2",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "list",
+        "hierarchy": {
+          "h1": "B DBSCAN hyperparameter details",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 12
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > B DBSCAN hyperparameter details]\n\nDBSCAN hyperparameter values were selected based on empirical analysis to balance the precision and recall of header/footer removal.\n\n-For documents with 7 to 8 pages: min samples _ = 3",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "list",
+        "hierarchy": {
+          "h1": "B DBSCAN hyperparameter details",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 12
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > B DBSCAN hyperparameter details]\n\nDBSCAN hyperparameter values were selected based on empirical analysis to balance the precision and recall of header/footer removal.\n\n-For documents with more than 8 pages: min samples _ = 4",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "list",
+        "hierarchy": {
+          "h1": "B DBSCAN hyperparameter details",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 12
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > B DBSCAN hyperparameter details]\n\nThis dynamic adjustment helps in better identification of headers and footers across documents of varying lengths.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "B DBSCAN hyperparameter details",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > B DBSCAN hyperparameter details]\n\nThis dynamic adjustment helps in better identification of headers and footers across documents of varying lengths.\n\n· eps (epsilon): This parameter defines the maximum distance between two samples for one to be considered as in the neighborhood of the other. A smaller value of '0.01' is chosen to ensure that only closely located text blocks (typically headers and footers) are clustered together.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "list",
+        "hierarchy": {
+          "h1": "B DBSCAN hyperparameter details",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 12
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > C Marker configurations]\n\nThe Marker tool in our PDF processing pipeline is responsible for extracting and handling various types of content from PDFs, including text, images, and layouts. By default, it uses the 'Surya' OCR engine for efficient and accurate text recognition. The tool is configured to run OCR on all pages of a PDF, even if some text can be directly extracted, ensuring comprehensive text recognition across the entire document.\nIn addition to text recognition, the Marker tool employs advanced models for layout detection and text ordering, such as the Texify model. A post-processing model further refines the data by applying a probability threshold to ensure only high-confidence predictions are retained, reducing errors and enhancing the overall quality of the output. The full settings for Marker can be found in 4.",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "C Marker configurations",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > D Llama3 training hyperparameters]\n\nWe provide the full list of training hyperparameters for our RAG-Llama3-70B in Table 5.\n12\nTable 4: All Marker configurations",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "D Llama3 training hyperparameters",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > D Llama3 training hyperparameters]\n\nWe provide the full list of training hyperparameters for our RAG-Llama3-70B in Table 5.\n12\nTable 4: All Marker configurations\n\n| Parameter                                        | Default                           | Description                                                                                 |\n|--------------------------------------------------|-----------------------------------|---------------------------------------------------------------------------------------------|\n| IMAGE_DPI                                        | 96                                | DPI for rendering images from PDFs.                                                         |\n| EXTRACT_IMAGES                                   | TRUE                              | Whether to extract images from PDFs.                                                        |\n| PAGINATE_OUTPUT                                  | FALSE                             | Whether to paginate the output markdown.                                                    |\n| DEFAULT_LANG                                     | English                           | Default language for OCR, should match a key in TESSERACT_LANGUAGES.                        |\n| DETECTOR_BATCH_SIZE                              | None                              | Batch size for text line detection. Defaults to 6 for CPU, 12 otherwise.                    |",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "table",
+        "hierarchy": {
+          "h1": "D Llama3 training hyperparameters",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 13
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > D Llama3 training hyperparameters]\n\nWe provide the full list of training hyperparameters for our RAG-Llama3-70B in Table 5.\n12\nTable 4: All Marker configurations\n\n| Parameter                                        | Default                           | Description                                                                                 |\n|--------------------------------------------------|-----------------------------------|---------------------------------------------------------------------------------------------|\n| SURYA_DETECTOR_DPI                               | 96                                | DPI for the Surya detector.                                                                 |\n| INVALID_CHARS                                    | [chr(0xfffd)]                     | Characters to ignore during OCR.                                                            |\n| OCR_ENGINE                                       | \"surya\"                           | OCR engine to use, defaults to \"surya\" on GPU and \"ocrmypdf\" on CPU.                        |\n| OCR_ALL_PAGES                                    | FALSE                             | Whether to run OCR on every page even if text can be extracted.                             |\n| SURYA_OCR_DPI                                    | 96                                | DPI for Surya OCR.                                                                          |",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "table",
+        "hierarchy": {
+          "h1": "D Llama3 training hyperparameters",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 13
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > D Llama3 training hyperparameters]\n\nWe provide the full list of training hyperparameters for our RAG-Llama3-70B in Table 5.\n12\nTable 4: All Marker configurations\n\n| Parameter                                        | Default                           | Description                                                                                 |\n|--------------------------------------------------|-----------------------------------|---------------------------------------------------------------------------------------------|\n| RECOGNITION_BATCH_SIZE                           | None                              | Batch size for Surya OCR, defaults to 64 for CUDA, 32 otherwise. Timeout for Tesseract OCR. |\n| TESSERACT_TIMEOUT TEXIFY_MODEL_MAX               | 20 384                            | Max inference length for Texify.                                                            |\n| TEXIFY_TOKEN_BUFFER                              | 256                               | Number of tokens to buffer above max for Texify.                                            |\n| TEXIFY_DPI                                       | 96                                | DPI for rendering images in Texify.                                                         |\n| TEXIFY_BATCH_SIZE                                | None                              | Batch size for Texify, defaults to 6 for CUDA, 12 otherwise.                                |",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "table",
+        "hierarchy": {
+          "h1": "D Llama3 training hyperparameters",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 13
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > D Llama3 training hyperparameters]\n\nWe provide the full list of training hyperparameters for our RAG-Llama3-70B in Table 5.\n12\nTable 4: All Marker configurations\n\n| Parameter                                        | Default                           | Description                                                                                 |\n|--------------------------------------------------|-----------------------------------|---------------------------------------------------------------------------------------------|\n| TEXIFY_MODEL_NAME                                | \"vikp/texify\"                     | Name of the Texify model.                                                                   |\n| SURYA_LAYOUT_DPI                                 | 96 [\"Caption\", \"Footnote\",        | DPI for Surya layout.                                                                       |\n| LAYOUT_MODEL_CHECKPOINT BBOX_INTERSECTION_THRESH | \"Picture\"] \"vikp/surya_layout3\"   | Checkpoint for the layout model.                                                            |\n| LAYOUT_BATCH_SIZE                                | 0.7                               | Threshold for bounding box intersection. Batch size for layout model, defaults to 12 for    |\n|                                                  | None                              | CUDA, 6 otherwise.                                                                          |",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "table",
+        "hierarchy": {
+          "h1": "D Llama3 training hyperparameters",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 13
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > D Llama3 training hyperparameters]\n\nWe provide the full list of training hyperparameters for our RAG-Llama3-70B in Table 5.\n12\nTable 4: All Marker configurations\n\n| Parameter                                        | Default                           | Description                                                                                 |\n|--------------------------------------------------|-----------------------------------|---------------------------------------------------------------------------------------------|\n| SURYA_ORDER_DPI                                  | 96                                | DPI for Surya ordering.                                                                     |\n| ORDER_BATCH_SIZE                                 | None                              | Batch size for ordering model, defaults to 12 for CUDA, 6 otherwise.                        |\n| ORDER_MAX_BBOXES                                 | 255                               | Maximum number of bounding boxes for ordering.                                              |\n| EDITOR_BATCH_SIZE                                | None                              | Batch size for final editing model, defaults to 6 for CUDA, 12 otherwise.                   |\n| EDITOR_MAX_LENGTH                                | 1024                              | Maximum length for the final editing model.                                                 |",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "table",
+        "hierarchy": {
+          "h1": "D Llama3 training hyperparameters",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 13
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > D Llama3 training hyperparameters]\n\nWe provide the full list of training hyperparameters for our RAG-Llama3-70B in Table 5.\n12\nTable 4: All Marker configurations\n\n| Parameter                                        | Default                           | Description                                                                                 |\n|--------------------------------------------------|-----------------------------------|---------------------------------------------------------------------------------------------|\n| EDITOR_MODEL_NAME ENABLE_EDITOR_MODEL            | \"vikp/pdf_postprocessor_t5\" FALSE | Name of the final editing model. Whether to enable the final editing model.                 |\n| EDITOR_CUTOFF_THRESH                             | 0.9                               | Probability threshold to ignore predictions below this value.                               |",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "table",
+        "hierarchy": {
+          "h1": "D Llama3 training hyperparameters",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 13
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > D Llama3 training hyperparameters]\n\n13",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "D Llama3 training hyperparameters",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > D Llama3 training hyperparameters]\n\n13\n\n| Parameter                   | Value          | Description                                                                                  |\n|-----------------------------|----------------|----------------------------------------------------------------------------------------------|\n| load_in_8bit                | FALSE          | Indicates whether to load the model in 8-bit precision.                                      |\n| load_in_4bit                | TRUE           | Indicates whether to load the model in 4-bit precision.                                      |\n| adapter                     | qlora          | Specifies the adapter type to use, in this case, QLoRA.                                      |\n| sequence_len                | 6000           | Maximum sequence length for training.                                                        |\n| sample_packing              | TRUE           | Enables efficient multi-packing with block diagonal attention and per sequence position_ids. |",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "table",
+        "hierarchy": {
+          "h1": "D Llama3 training hyperparameters",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 14
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > D Llama3 training hyperparameters]\n\n13\n\n| Parameter                   | Value          | Description                                                                                  |\n|-----------------------------|----------------|----------------------------------------------------------------------------------------------|\n| pad_to_sequence_len         | TRUE           | Pads inputs to ensure each step uses constant-sized buffers, reducing memory fragmentation.  |\n| lora_r                      | 8              | Rank of the low-rank adaptation matrices in LoRA.                                            |\n| lora_alpha                  | 16             | Scaling factor for LoRA.                                                                     |\n| lora_dropout                | 0.05           | Dropout rate for LoRA layers.                                                                |\n| lora_target_linear          | TRUE           | Indicates whether to target all linear modules in LoRA.                                      |",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "table",
+        "hierarchy": {
+          "h1": "D Llama3 training hyperparameters",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 14
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > D Llama3 training hyperparameters]\n\n13\n\n| Parameter                   | Value          | Description                                                                                  |\n|-----------------------------|----------------|----------------------------------------------------------------------------------------------|\n| gradient_accumulation_steps | 4              | Number of steps to accumulate gradients before updating model weights.                       |\n| micro_batch_size            | 2              | Number of samples in each micro-batch.                                                       |\n| num_epochs                  | 2              | Number of epochs to train the model.                                                         |\n| optimizer                   | adamw_bnb_8bit | Optimizer used for training, in this case, AdamW with 8-bit precision.                       |\n| lr_scheduler                | cosine         | Learning rate scheduler type, in this case, cosine annealing.                                |",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "table",
+        "hierarchy": {
+          "h1": "D Llama3 training hyperparameters",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 14
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > D Llama3 training hyperparameters]\n\n13\n\n| Parameter                   | Value          | Description                                                                                  |\n|-----------------------------|----------------|----------------------------------------------------------------------------------------------|\n| learning_rate               | 8.00E-06       | Learning rate for training.                                                                  |\n| train_on_inputs             | FALSE          | Indicates whether to include the human's prompt in the training labels.                      |\n| group_by_length             | FALSE          | Whether to group data by length to minimize padding.                                         |\n| bf16                        | auto           | Use bf16 precision if available.                                                             |\n| gradient_checkpointing      | TRUE           | Enables gradient checkpointing to save memory.                                               |",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "table",
+        "hierarchy": {
+          "h1": "D Llama3 training hyperparameters",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 14
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > D Llama3 training hyperparameters]\n\n13\n\n| Parameter                   | Value          | Description                                                                                  |\n|-----------------------------|----------------|----------------------------------------------------------------------------------------------|\n| logging_steps               | 20             | Frequency of logging training progress.                                                      |\n| flash_attention             | TRUE           | Enables flash attention for improved performance.                                            |\n| warmup_steps                | 20             | Number of steps for learning rate warmup.                                                    |\n| evals_per_epoch             | 5              | Number of evaluations to perform per epoch.                                                  |\n| saves_per_epoch             | 3              | Number of times to save checkpoints per epoch.                                               |",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "table",
+        "hierarchy": {
+          "h1": "D Llama3 training hyperparameters",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        },
+        "page": 14
+      }
+    },
+    {
+      "page_content": "[Source: rag_research-arxiv_compressed > D Llama3 training hyperparameters]\n\nTable 5: All training hyperparameters.\n14",
+      "metadata": {
+        "source": "rag_research-arxiv_compressed",
+        "file_name": "rag_research-arxiv_compressed",
+        "chunk_type": "paragraph",
+        "hierarchy": {
+          "h1": "D Llama3 training hyperparameters",
+          "h2": null,
+          "h3": null,
+          "h4": null
+        }
+      }
+    }
+  ]
+}

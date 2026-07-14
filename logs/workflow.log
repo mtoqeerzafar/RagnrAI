@@ -1,0 +1,101 @@
+2026-07-13 18:12:15 | INFO | [DEBUG] Entered _plan_step
+2026-07-13 18:12:17 | INFO | [DEBUG] Needs retrieval -> Routing to rewrite_query.
+2026-07-13 18:12:17 | INFO | [DEBUG] Entered _rewrite_query_step
+2026-07-13 18:12:17 | INFO | [DEBUG] Entered _check_cache_step
+2026-07-13 18:12:28 | INFO | [DEBUG] No cache. Routing to retrieve.
+2026-07-13 18:12:28 | INFO | [DEBUG] Entered _retrieve_step
+2026-07-13 18:12:28 | INFO | Retrieving for sub-query: what is RAG-Aware LLM Finetuning?
+2026-07-13 18:12:35 | INFO | Retrieved total 6 unique chunks from database.
+2026-07-13 18:12:35 | INFO |   [Chunk 1] Source: rag_research-arxiv_compressed | Queries: ['what is RAG-Aware LLM Finetuning?'] | Text: [Source: rag_research-arxiv_compressed > RAG-Aware LLM Finetuning]
+
+To make the LLM adapt to the document domain as well as being aware of our Markdow...
+2026-07-13 18:12:35 | INFO |   [Chunk 2] Source: rag_research-arxiv_compressed | Queries: ['what is RAG-Aware LLM Finetuning?'] | Text: [Source: rag_research-arxiv_compressed > 7 Conclusion]
+
+In conclusion, our work significantly extends the powers of RAG frameworks by dealing with dif...
+2026-07-13 18:12:35 | INFO |   [Chunk 3] Source: rag_research-arxiv_compressed | Queries: ['what is RAG-Aware LLM Finetuning?'] | Text: [Source: rag_research-arxiv_compressed > Image and Table Processing]
+
+One key improvement is generating captions to the images which alleviates image ...
+2026-07-13 18:12:35 | INFO | [DEBUG] Entered _rerank_step
+2026-07-13 18:12:35 | INFO | Reranked 6 chunks.
+2026-07-13 18:12:35 | INFO |   [LLM Rank 1] Rerank Score: 0.9985589385032654 | Source: rag_research-arxiv_compressed | Text: [Source: rag_research-arxiv_compressed > RAG-Aware LLM Finetuning]
+
+To make the LLM adapt to the document domain as well as being aware of our Markdow...
+2026-07-13 18:12:35 | INFO |   [LLM Rank 2] Rerank Score: 0.9897463321685791 | Source: rag_research-arxiv_compressed | Text: [Source: rag_research-arxiv_compressed > 7 Conclusion]
+
+In conclusion, our work significantly extends the powers of RAG frameworks by dealing with dif...
+2026-07-13 18:12:35 | INFO |   [LLM Rank 3] Rerank Score: 0.9791007041931152 | Source: rag_research-arxiv_compressed | Text: [Source: rag_research-arxiv_compressed > Image and Table Processing]
+
+One key improvement is generating captions to the images which alleviates image ...
+2026-07-13 18:12:35 | INFO | [DEBUG] Entered _check_relevance_step
+2026-07-13 18:12:37 | INFO | Relevance Result: {
+  "sufficient": true,
+  "reasoning": "The documents provide a comprehensive overview of the RAG-Aware LLM Finetuning process, including the training data, model architecture, and evaluation metrics. The system's ability to adapt to the document domain and handle non-textual data is also discussed in detail. Therefore, the generator has sufficient evidence to synthesize a response to the question.",
+  "evidence_type": "complete",
+  "entity_coverage": {
+    "RAG-Aware LLM Finetuning": 1.0
+  },
+  "missing_entities": [],
+  "missing_relations": []
+}
+2026-07-13 18:12:37 | INFO | [DEBUG] Relevance is sufficient -> research
+2026-07-13 18:12:37 | INFO | [DEBUG] Entered _research_step
+2026-07-13 18:12:41 | INFO | [DEBUG] Entered _verification_step
+2026-07-13 18:12:42 | INFO | [DEBUG] Entered _output_guardrail_step
+2026-07-13 18:14:03 | INFO | [CACHE] Exact: Saved | Status: Verified | Reason: PASS
+2026-07-13 18:14:05 | INFO | [CACHE] Semantic: Saved | Status: Verified | Reason: PASS
+2026-07-13 18:59:50 | INFO | [DEBUG] Entered _plan_step
+2026-07-13 18:59:51 | INFO | [DEBUG] Needs retrieval -> Routing to rewrite_query.
+2026-07-13 18:59:51 | INFO | [DEBUG] Entered _rewrite_query_step
+2026-07-13 18:59:52 | INFO | [DEBUG] Entered _check_cache_step
+2026-07-13 19:00:04 | INFO | [DEBUG] No cache. Routing to retrieve.
+2026-07-13 19:00:04 | INFO | [DEBUG] Entered _retrieve_step
+2026-07-13 19:00:04 | INFO | Retrieving for sub-query: Query Processing and Retrieval
+2026-07-13 19:00:05 | INFO | Retrieved total 4 unique chunks from database.
+2026-07-13 19:00:05 | INFO |   [Chunk 1] Source: rag_research-arxiv_compressed | Queries: ['Query Processing and Retrieval'] | Text: [Source: rag_research-arxiv_compressed > Query Processing and Retrieval]
+
+Upon receiving a query q , the query is also embedded into the same high-dim...
+2026-07-13 19:00:05 | INFO |   [Chunk 2] Source: rag_research-arxiv_compressed | Queries: ['Query Processing and Retrieval'] | Text: [Source: rag_research-arxiv_compressed > 3.2 System Design]
+
+Embedding and Storage. The preprocessed markdown document is segmented into chunks of 100...
+2026-07-13 19:00:05 | INFO |   [Chunk 3] Source: rag_research-arxiv_compressed | Queries: ['Query Processing and Retrieval'] | Text: [Source: rag_research-arxiv_compressed > 3.2.2 Embedding and storage]
+
+Elasticsearch ( v 1 , v 2 , ... v m ) (4)
+To enhance the retrieval process, we ...
+2026-07-13 19:00:05 | INFO | [DEBUG] Entered _rerank_step
+2026-07-13 19:00:05 | INFO | Reranked 4 chunks.
+2026-07-13 19:00:05 | INFO |   [LLM Rank 1] Rerank Score: 0.9979806542396545 | Source: rag_research-arxiv_compressed | Text: [Source: rag_research-arxiv_compressed > Query Processing and Retrieval]
+
+Upon receiving a query q , the query is also embedded into the same high-dim...
+2026-07-13 19:00:05 | INFO |   [LLM Rank 2] Rerank Score: 0.747886061668396 | Source: rag_research-arxiv_compressed | Text: [Source: rag_research-arxiv_compressed > 3.2 System Design]
+
+Embedding and Storage. The preprocessed markdown document is segmented into chunks of 100...
+2026-07-13 19:00:05 | INFO |   [LLM Rank 3] Rerank Score: 0.3707711398601532 | Source: rag_research-arxiv_compressed | Text: [Source: rag_research-arxiv_compressed > 3.2.2 Embedding and storage]
+
+Elasticsearch ( v 1 , v 2 , ... v m ) (4)
+To enhance the retrieval process, we ...
+2026-07-13 19:00:06 | INFO | [DEBUG] Entered _check_relevance_step
+2026-07-13 19:00:07 | INFO | Relevance Result: {
+  "sufficient": true,
+  "reasoning": "The documents provide sufficient foundational context and facts to answer the question. The system design and embedding process are well-explained, and the Elasticsearch and RAPTOR components are described in detail. The limitations section also provides insight into potential issues with PDF document formats and retrieval steps. However, the question does not require a comparison between two entities, so the evidence is sufficient for a single-entity query type.",
+  "evidence_type": "complete",
+  "entity_coverage": {
+    "Query Processing": 0.8,
+    "Retrieval": 0.9
+  },
+  "missing_entities": [],
+  "missing_relations": []
+}
+2026-07-13 19:00:07 | INFO | [DEBUG] Relevance is sufficient -> research
+2026-07-13 19:00:07 | INFO | [DEBUG] Entered _research_step
+2026-07-13 19:00:14 | INFO | [DEBUG] Entered _verification_step
+2026-07-13 19:00:15 | INFO | [DEBUG] Entered _output_guardrail_step
+2026-07-13 19:00:54 | INFO | [CACHE] Exact: Saved | Status: Verified | Reason: PASS
+2026-07-13 19:00:56 | INFO | [CACHE] Semantic: Saved | Status: Verified | Reason: PASS
+2026-07-14 14:59:49 | INFO | [DEBUG] Entered _plan_step
+2026-07-14 14:59:50 | INFO | [DEBUG] Needs retrieval -> Routing to rewrite_query.
+2026-07-14 14:59:50 | INFO | [DEBUG] Entered _rewrite_query_step
+2026-07-14 14:59:50 | INFO | [DEBUG] Entered _check_cache_step
+2026-07-14 15:00:00 | INFO | [DEBUG] Semantic Cache Hit in Workflow.
+2026-07-14 15:00:00 | INFO | [DEBUG] Entered _output_guardrail_step
+2026-07-14 15:01:06 | INFO | [CACHE] Exact: Saved | Status: Verified | Reason: PASS
+2026-07-14 15:01:07 | INFO | [CACHE] Semantic: Saved | Status: Verified | Reason: PASS

@@ -1,0 +1,82 @@
+version: '3.8'
+
+services:
+  # --------------------------------------------------------
+  # 1. PostgreSQL (Relational DB for Metadata & Users)
+  # --------------------------------------------------------
+  postgres:
+    image: postgres:15-alpine
+    container_name: ragnr_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ragnr_user
+      POSTGRES_PASSWORD: ragnr_password
+      POSTGRES_DB: ragnr_metadata
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ragnr_user -d ragnr_metadata"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # --------------------------------------------------------
+  # 2. Redis (Message Broker & Semantic Caching)
+  # --------------------------------------------------------
+  redis:
+    image: redis:7-alpine
+    container_name: ragnr_redis
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --save 60 1 --loglevel warning
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # --------------------------------------------------------
+  # 3. MinIO (S3-Compatible Object Storage for PDFs)
+  # --------------------------------------------------------
+  minio:
+    image: minio/minio:latest
+    container_name: ragnr_minio
+    restart: always
+    environment:
+      MINIO_ROOT_USER: admin
+      MINIO_ROOT_PASSWORD: password123
+    ports:
+      - "9000:9000" # API Port
+      - "9001:9001" # Web UI Console Port
+    volumes:
+      - minio_data:/data
+    command: server /data --console-address ":9001"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # --------------------------------------------------------
+  # 4. Qdrant (Vector Database for Hybrid Search)
+  # --------------------------------------------------------
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: ragnr_qdrant
+    restart: always
+    ports:
+      - "6333:6333" # REST API
+      - "6334:6334" # gRPC
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+volumes:
+  postgres_data:
+  redis_data:
+  minio_data:
+  qdrant_data:

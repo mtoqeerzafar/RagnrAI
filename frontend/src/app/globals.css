@@ -1,0 +1,337 @@
+:root {
+  /* Claude-like Dark Theme Colors */
+  --bg-primary: #2b2a29;
+  --bg-secondary: #1e1d1c;
+  --bg-input: #3a3938;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --text-primary: #e6e5e3;
+  --text-secondary: #a3a19f;
+  --accent-color: #d97757; /* Claude Orange/Peach */
+  --accent-hover: #c46445;
+  --danger-color: #ef4444;
+  --success-color: #10b981;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Serif Font for Greetings */
+.serif-heading {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.sidebar {
+  width: 260px;
+  background: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, margin-left 0.3s ease;
+  z-index: 10;
+  border-right: 1px solid var(--border-color);
+}
+
+.sidebar.closed {
+  margin-left: -260px;
+}
+
+/* On mobile, sidebar is an overlay */
+@media (max-width: 768px) {
+  .sidebar {
+    position: absolute;
+    height: 100%;
+    transform: translateX(0);
+  }
+  .sidebar.closed {
+    margin-left: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.main-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: var(--bg-primary);
+}
+
+.chat-header {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.header-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.messages-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  scroll-behavior: auto; /* Handled via React ref for smooth/instant control */
+}
+
+/* Empty State Centering */
+.empty-state-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  animation: fadeIn 0.6s ease;
+}
+
+/* Message Bubbles - Claude style doesn't use strong background bubbles, just text */
+.message-wrapper {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.message-wrapper.user {
+  /* User messages are right aligned or styled differently, but Claude centers them */
+  justify-content: flex-end;
+}
+
+.message-wrapper.assistant {
+  justify-content: flex-start;
+}
+
+.message-bubble {
+  padding: 12px 16px;
+  line-height: 1.6;
+  font-size: 1rem;
+  max-width: 100%;
+}
+
+.message-wrapper.user .message-bubble {
+  background: var(--bg-input);
+  border-radius: 12px;
+  color: var(--text-primary);
+}
+
+.message-wrapper.assistant .message-bubble {
+  color: var(--text-primary);
+}
+
+/* Input Area */
+.input-container {
+  padding: 0 24px 24px 24px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.input-container.centered {
+  max-width: 700px;
+  padding: 24px;
+}
+
+.input-box {
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 100px;
+  transition: all 0.2s ease;
+}
+
+.input-box:focus-within {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.text-input {
+  flex: 1;
+  width: 100%;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 4px 8px;
+}
+
+.input-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 0 4px;
+}
+
+.send-btn {
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 2px;
+}
+
+.send-btn:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.send-btn:disabled {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  cursor: not-allowed;
+}
+
+.thread-item {
+  padding: 8px 12px;
+  margin: 2px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.thread-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+
+.thread-item.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.new-chat-btn {
+  margin: 12px;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.new-chat-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Markdown styling inside bubbles */
+.markdown p { margin-bottom: 1em; }
+.markdown p:last-child { margin-bottom: 0; }
+.markdown a { color: var(--accent-color); text-decoration: none; }
+.markdown a:hover { text-decoration: underline; }
+.markdown code { background: rgba(0,0,0,0.3); padding: 2px 4px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+.markdown pre { background: var(--bg-secondary); padding: 16px; border-radius: 8px; overflow-x: auto; margin-bottom: 1em; border: 1px solid var(--border-color); }
+.markdown pre code { background: transparent; padding: 0; }
+.markdown ul, .markdown ol { margin-left: 20px; margin-bottom: 1em; }
+.markdown li { margin-bottom: 0.25em; }
+
+.file-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: var(--text-primary);
+}
+
+.attach-btn {
+  background: transparent;
+  color: var(--text-secondary);
+  border: none;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 2px;
+}
+
+.attach-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
