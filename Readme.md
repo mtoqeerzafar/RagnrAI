@@ -164,6 +164,7 @@ flowchart TD
     NodeGuardrail -->|"3.9 Strips PII"| API_Query
     API_Query -->|"4.0 Streams SSE (Hides <thinking>)"| UI
     UI -->|"4.1 Renders final answer"| EndUser
+```
 
 
 ## 🧠 The LangGraph Agent Swarm
