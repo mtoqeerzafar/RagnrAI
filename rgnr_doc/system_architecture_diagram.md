@@ -5,6 +5,7 @@ This document contains a minute-detail architectural diagram of the `RagnrAI` pr
 ## Architecture Diagram
 
 ```mermaid
+%%{init: {"flowchart": {"defaultRenderer": "elk"}}}%%
 flowchart TD
     %% Define Styles
     classDef user fill:#3498db,stroke:#333,stroke-width:2px,color:#fff,shape:circle
