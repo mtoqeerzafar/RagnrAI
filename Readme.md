@@ -236,8 +236,14 @@ Stop splitting PDFs blindly by arbitrary 1,000-character limits. We engineered a
 
 ---
 
-## 📊 Observability & Automated Evaluation
-We treat AI outputs like software code—they must be tested.
+## 📊 Observability, Logging & Automated Evaluation
+We treat system visibility and output validation like core software parameters:
+- **Component-Isolated Logging (Loguru):** We implement a strict routing-filter logging pattern using `loguru` defined in [utils/logging.py](file:///d:/RagnrAI/utils/logging.py). This splits logs into dedicated, rotating files under `logs/` to prevent log intermixing and ensure easy debugging of individual subsystems:
+  - `logs/retrieval.log`: Captures vector query logic, sparse/dense search steps, and Qdrant retrieval metrics (via `retrieval_logger`).
+  - `logs/workflow.log`: Tracks LangGraph state engine transitions, planner route decisions, and verification outputs (via `workflow_logger`).
+  - `logs/cache.log`: Records L1 Redis exact matches and L2 Qdrant semantic cache hits (via `cache_logger`).
+  - `logs/performance.log`: Records execution durations and subsystem latency benchmarks (via `performance_logger`).
+  - `logs/app.log`: Logs general FastAPI server state and worker diagnostics (filtering out component logs).
 - **LangSmith Tracing:** Every single node in the Multi-Agent swarm, including exact LLM latencies, prompt tokens, and failure points, is visualized and traced in real-time.
 - **Automated Regression Pipeline:** Our `scripts/evaluate_pipeline.py` is a deterministic LLM-as-a-Judge test suite. It runs CI/CD regression tests to mathematically grade RagnrAI from 0.0 to 1.0 on **Faithfulness** and **Answer Relevancy**, proving mathematically that the system is not hallucinating.
 
